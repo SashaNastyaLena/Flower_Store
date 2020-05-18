@@ -69,6 +69,10 @@ header{
 	border-radius: 5px;
 	background: none;
 }
+.main-btn:hover{
+	box-shadow: 0 0 10px white;
+	text-shadow: 0 0 10px white;
+}
 .title__1{
 	color: #fff;
 	font-size: 60px;
@@ -173,6 +177,7 @@ hr{
 }
 section{
 	background-image: linear-gradient(  white , #fad3d8);
+	padding-bottom: 40px;
 }
 .wrapper {
 	display: grid;
@@ -218,8 +223,9 @@ section{
     grid-row-end: 5; 
 }  
 .offer li{
-	width: 400px;
-	padding: 10px 0;
+	margin: 20px;
+	width: 450px;
+	
 }
 .offer{
 	display: flex;
@@ -253,6 +259,7 @@ section{
 	width: 450px;
 }
 footer{
+	padding:20px;
 	background-color: rgb(29, 28, 28);
 }
 .footer{
