@@ -1,0 +1,67 @@
+body{
+	padding: 0px;
+	margin: 0px auto;
+	font-family: 'Titillium Web';
+}
+.container{
+	width: 1200px;
+	 
+	margin: 0px auto;
+}
+nav{
+	padding:  0;
+	display: flex;
+	justify-content: flex-end;
+}
+header{
+	background:url("img/aboutus.jpg"); 
+    background-size: cover;
+    height: 100vh;
+}
+
+.logo{
+	color: #6495ed;
+	font-size: 28px;
+	font-weight: 900;
+}
+.menu li{
+	float: left;
+	display: block;
+	text-decoration: none;
+}
+.menu a{ 
+	text-decoration: none;
+	color: #717171;
+	font-size: 20px;
+	 
+	padding: 10px 15px;
+}
+.menu a:hover{
+    background-color: #CCB0BC;
+}
+.header_title{
+    position: relative;
+    top: 10%;
+    color: #B14D7D; 
+    font-size: 40px;
+    text-align: center;
+    text-shadow: 2px 2px 5px #CAA0B1;;
+}
+
+section{
+    background-image: url('img/aboutblock.jpg');
+    background-position: 100%;
+}
+.block{
+    border: 1px dotted azure;
+    padding: 20px;
+}
+.block_title{
+    color: blanchedalmond;
+    text-shadow: 2px 2px 5px plum;
+    font-size: 28px;
+}
+.block_ul{
+    font-size: 16px;
+
+}

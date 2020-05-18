@@ -1,0 +1,262 @@
+body{
+	padding: 0px;
+	margin: 0px auto;
+	font-family: 'Titillium Web';
+}
+.container{
+	width: 1200px;
+	height: 65px;
+	margin: 0px auto;
+}
+nav{
+	padding:  0;
+	display: flex;
+	justify-content: flex-end;
+}
+header{
+	background:url("img/background.jpg"); 
+	background-size: cover;
+}
+
+.logo{
+	color: #6495ed;
+	font-size: 28px;
+	font-weight: 900;
+}
+.menu li{
+	float: left;
+	display: block;
+	text-decoration: none;
+}
+.menu a{ 
+	text-decoration: none;
+	color: #717171;
+	font-size: 20px;
+	 
+	padding: 10px 15px;
+}
+.main{
+	height: 80vh;
+	padding-top: 100px ; 
+	padding-left: 50%;
+
+}
+.title{
+
+	color: #F6F5F3;
+	text-transform: uppercase;
+	text-align: center;
+
+}
+.title h1{
+	font-size: 50px;
+	padding-top: 100px;
+	margin: 0px;
+}
+.title h2{
+	margin: -10px;
+	font-size: 40px;
+	font-weight: 400;
+}
+.main-btn{
+	cursor: pointer;
+	padding: 10px 30px;
+	margin-top: 30px;
+	font-size: 24px;
+	font-weight: 700;
+	color: #fff;
+	border: 2px solid #DCD3AD;
+	border-radius: 5px;
+	background: linear-gradient(#DCD3AD, rgb(251, 232, 144) 48%, #F1EBC7 52%, rgb(236, 219, 144));
+}
+.title__1{
+	color: #fff;
+	font-size: 60px;
+}
+.box{
+	position: absolute;
+    margin: 60px 380px;
+	width: 480px;
+	background-color: #FFFFFF;
+	border-radius: 5px; 
+	border-bottom: 5px solid #51C03D;
+	padding: 20px 20px 0px 20px;
+	box-shadow: 0px 0px 9px grey;
+}
+.box_title{
+	 text-align: center;
+}
+.box p{
+	margin: 0px;
+	padding: 0px;
+	color:#717171;
+}
+.img_box{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 20px 0px;
+}
+.img_box div img{
+	height: 60px;
+	width: 90px;
+}
+.content{
+	 
+	color:#717171;
+	max-width: 70%;
+	padding: 30px ;
+	margin: 0 auto;
+	text-align: center;
+}
+.content h2{
+	font-weight: 100;
+}
+.icon_content{
+	float:left;
+	margin: 0px 30px;
+}
+.icon_content div{
+	width: 140px;
+	height: 140px;
+	background-color: white;
+	border-radius: 50%;	
+}
+.back img{
+	padding-top: 25%;
+	width: 80px;
+	height: auto;
+}
+.icon_main{
+	margin: 50px 240px 0px 240px;
+}
+ 
+.menu a:hover{
+	
+	background-color:  #FFF;
+	opacity: 0.4;
+	 
+} 
+.propose{
+	display:flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.propose__cont{ 
+	width: 400px;
+}
+.propose img:hover{
+	opacity: 0.5;
+	position: relative;
+
+} 
+hr{
+	display: inline-block;
+	width: 60px;
+	background-color:rgb(228, 142, 185);
+	height: 2px;
+}
+.number{
+	display: flex;
+	align-items: center;
+}
+.num{
+	font-size: 40px;
+	font-weight: bolder;
+	color: rgb(228, 142, 185);
+}
+.content__title{
+	color: rgb(228, 142, 185);
+	font-weight: 600;
+	font-size: 30px ;
+	padding-bottom: 30px;
+}
+section{
+	background-image: linear-gradient(  white , rgb(247, 218, 220));
+}
+.wrapper {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr ;
+	grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+	padding: 20px 0;
+  }
+
+ .wrapper img{
+	max-width: 300px;
+	margin: 10px;
+ }
+.item{
+	grid-column: 1; 
+    grid-row-start: 1; 
+    grid-row-end: 3; 
+}
+.item1 { 
+    grid-column: 1; 
+    grid-row-start: 3; 
+    grid-row-end: 5; 
+} 
+.item2 { 
+    grid-column: 2; 
+    grid-row-start: 2; 
+    grid-row-end: 4; 
+} 
+.item3 { 
+    grid-column: 3; 
+    grid-row-start: 1; 
+    grid-row-end: 3; 
+ } 
+  
+.item5 { 
+    grid-column-start: 2; 
+    grid-column-end: 3; 
+	grid-row-start: 4; 
+    grid-row-end: 6; 
+} 
+.item6 { 
+	grid-column: 3; 
+	grid-row-start: 3; 
+    grid-row-end: 5; 
+}  
+.offer li{
+	width: 400px;
+	padding: 10px 0;
+}
+.offer{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	font-size: 20px;
+}
+.review{
+	border: 2px solid rgb(251, 244, 212);
+	padding: 15px;
+	margin: 5px;
+	background-color: rgb(252, 253, 247);
+}
+#reviews{
+	text-align: left;
+	display: flex;
+	flex-direction: column-reverse;
+}
+#review_box{
+	display: none;
+	position: fixed;
+	top: 20%;
+	left: 30%;
+	width: 500px;
+	border: 2px solid black;
+	padding: 30px;
+	background-color: rgb(250, 248, 234);
+}
+.button{
+	display: flex;
+	justify-content: space-between;
+	width: 450px;
+}
+footer{
+	background-color: rgb(29, 28, 28);
+}
+.footer{
+	display: flex;
+	justify-content: space-between;
+}
