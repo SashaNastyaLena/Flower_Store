@@ -30,7 +30,7 @@ header{
 }
 .menu a{ 
 	text-decoration: none;
-	color: #717171;
+	color: #3d5111;
 	font-size: 20px;
 	 
 	padding: 10px 15px;
@@ -62,12 +62,12 @@ header{
 	cursor: pointer;
 	padding: 10px 30px;
 	margin-top: 30px;
-	font-size: 24px;
-	font-weight: 700;
+	font-size: 21px;
+	font-weight: 600;
 	color: #fff;
-	border: 2px solid #DCD3AD;
+	border: 2px solid whitesmoke;
 	border-radius: 5px;
-	background: linear-gradient(#DCD3AD, rgb(251, 232, 144) 48%, #F1EBC7 52%, rgb(236, 219, 144));
+	background: none;
 }
 .title__1{
 	color: #fff;
@@ -172,7 +172,7 @@ hr{
 	padding-bottom: 30px;
 }
 section{
-	background-image: linear-gradient(  white , rgb(247, 218, 220));
+	background-image: linear-gradient(  white , #fad3d8);
 }
 .wrapper {
 	display: grid;
@@ -228,9 +228,8 @@ section{
 	font-size: 20px;
 }
 .review{
-	border: 2px solid rgb(251, 244, 212);
-	padding: 15px;
-	margin: 5px;
+	padding: 25px;
+	margin: 15px;
 	background-color: rgb(252, 253, 247);
 }
 #reviews{
