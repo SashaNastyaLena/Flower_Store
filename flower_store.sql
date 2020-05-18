@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: May 18, 2020 at 08:52 PM
+-- Generation Time: May 18, 2020 at 09:25 PM
 -- Server version: 8.0.17
 -- PHP Version: 7.3.10
 
@@ -31,8 +31,8 @@ USE `flower_store`;
 --
 
 CREATE TABLE `comments` (
-  `AuthorName` varchar(250) NOT NULL,
-  `CommentText` mediumtext
+  `author_name` varchar(250) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
+  `comment_text` mediumtext CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 -- --------------------------------------------------------
@@ -42,10 +42,12 @@ CREATE TABLE `comments` (
 --
 
 CREATE TABLE `flower_catalog` (
-  `FlowerID` int(11) NOT NULL,
-  `FlowerName` varchar(250) NOT NULL,
-  `Price` decimal(19,2) NOT NULL,
-  `IsAvailable` bit(1) NOT NULL
+  `flower_id` int(11) NOT NULL,
+  `flower_category` varchar(250) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
+  `flower_name` varchar(250) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
+  `price` decimal(19,2) NOT NULL,
+  `img_src` varchar(250) NOT NULL,
+  `is_available` bit(1) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
@@ -56,7 +58,7 @@ CREATE TABLE `flower_catalog` (
 -- Indexes for table `flower_catalog`
 --
 ALTER TABLE `flower_catalog`
-  ADD PRIMARY KEY (`FlowerID`);
+  ADD PRIMARY KEY (`flower_id`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
