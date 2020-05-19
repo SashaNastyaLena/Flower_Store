@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: May 19, 2020 at 05:14 PM
+-- Generation Time: May 19, 2020 at 05:53 PM
 -- Server version: 8.0.17
 -- PHP Version: 7.3.10
 
@@ -40,7 +40,7 @@ CREATE TABLE `category` (
 --
 
 INSERT INTO `category` (`category_id`, `category`) VALUES
-(1, 'Tulip'),
+(1, 'Tulips'),
 (2, 'Roses'),
 (3, 'Wedding bouquets'),
 (4, 'Flowers'),
@@ -114,46 +114,46 @@ CREATE TABLE `flower_catalog` (
 --
 
 INSERT INTO `flower_catalog` (`flower_id`, `category_id`, `flower_name`, `price`, `img_src`, `is_available`, `provider_id`) VALUES
-(234007, 1, 'Heartfelt', '69.99', 'img\\Heartfelt.jpg', b'1', 3),
-(234008, 1, 'All the Rage', '45.00', 'img\\All_the_Rage.jpg', b'1', 3),
-(234009, 1, 'Tiger', '54.50', 'img\\Tiger.jpg', b'0', 3),
-(234010, 1, 'Ballerina', '55.00', 'img\\Ballerina.jpg', b'1', 3),
-(234011, 1, 'Knockout', '40.60', 'img\\Knockout.jpg', b'1', 3),
-(234012, 1, 'Pirouette', '58.00', 'img\\Pirouette.jpg', b'1', 3),
-(234013, 2, 'Buttercream', '65.00', 'img\\Buttercream.jpg', b'1', 2),
-(234014, 2, 'Santorini', '52.00', 'img\\Santorini.jpg', b'0', 2),
-(234015, 2, 'Nonna', '70.85', 'img\\Nonna.jpg', b'1', 2),
-(234016, 2, 'Amelia', '100.00', 'img\\Amelia.jpg', b'1', 2),
-(234017, 2, 'Finesse', '90.99', 'img\\Finesse.jpg', b'1', 2),
-(234018, 2, 'Rosy Glow', '74.99', 'img\\Rosy_Glow.jpg', b'1', 2),
-(234019, 2, 'Fifteen Peach', '79.55', 'img\\Fifteen_Peach.jpg', b'1', 2),
-(234020, 2, 'Magic Moment', '81.00', 'img\\Magic_Moment.jpg', b'1', 2),
-(234021, 3, 'Double the Buttercream', '79.00', 'img\\Double_the_Buttercream.jpg', b'1', 5),
-(234022, 3, 'Double the Unicorn', '85.99', 'img\\Double_the_Unicorn.jpg', b'0', 5),
-(234023, 3, 'Muse', '150.00', 'img\\Muse.jpg', b'1', 5),
-(234024, 3, 'Sonnet', '80.50', 'img\\Sonnet.jpg', b'1', 5),
-(234025, 3, 'Daydream', '90.00', 'img\\Daydream.jpg', b'1', 5),
-(234026, 3, 'Blossom', '115.00', 'img\\Blossom.jpg', b'1', 5),
-(234027, 3, 'Godetia', '70.00', 'img\\Godetia.jpg', b'1', 5),
-(234028, 3, 'Purple Iris', '65.99', 'img\\Purple_Iris.jpg', b'1', 5),
-(234029, 3, 'Isle of White', '74.99', 'img\\Isle_of_White.jpg', b'1', 5),
-(234030, 4, 'Luna', '65.70', 'img\\Luna.jpg', b'1', 1),
-(234031, 4, 'Juliet', '64.99', 'img\\Juliet.jpg', b'1', 1),
-(234032, 4, 'Regatta', '130.00', 'img\\Regatta.jpg', b'1', 1),
-(234033, 4, 'New Edwardian', '150.00', 'img\\New_Edwardian.jpg', b'1', 1),
-(234034, 4, 'Double_the_Mardi', '80.00', 'img\\Double_the_Mardi.jpg', b'0', 1),
-(234035, 4, 'Carmen', '75.90', 'img\\Carmen.jpg', b'0', 1),
-(234036, 4, 'Flora', '75.90', 'img\\Flora.jpg', b'1', 1),
-(234037, 5, 'Red and Blush', '40.00', 'img\\Red_and_Blush.jpg', b'1', 3),
-(234038, 5, 'Blooming Song', '64.99', 'img\\Blooming_Song.jpg', b'1', 3),
-(234039, 5, 'Pinky', '78.95', 'img\\Pinky.jpg', b'0', 3),
-(234040, 5, 'Poppins', '55.00', 'img\\Poppins.jpg', b'1', 3),
-(234041, 5, 'Signature', '102.95', 'img\\Signature.jpg', b'1', 3),
-(234042, 5, 'Loving', '42.99', 'img\\Loving.jpg', b'0', 3),
-(234043, 5, 'Winter_Spice', '61.00', 'img\\Winter_Spice.jpg', b'1', 3),
-(234044, 5, 'Cymbidium Orchids', '70.00', 'img\\Cymbidium_Orchids.jpg', b'1', 3),
-(234045, 5, 'Charm', '75.95', 'img\\Charm.jpg', b'1', 3),
-(234046, 5, 'Pink Splendid', '85.00', 'img\\Pink_Splendid.jpg', b'1', 3);
+(234007, 1, 'Heartfelt', '69.99', 'flower_catalog/Heartfelt.jpg', b'1', 3),
+(234008, 1, 'All the Rage', '45.00', 'flower_catalog/All_the_Rage.jpg', b'1', 3),
+(234009, 1, 'Tiger', '54.50', 'flower_catalog/Tiger.jpg', b'0', 3),
+(234010, 1, 'Ballerina', '55.00', 'flower_catalog/Ballerina.jpg', b'1', 3),
+(234011, 1, 'Knockout', '40.60', 'flower_catalog/Knockout.jpg', b'1', 3),
+(234012, 1, 'Pirouette', '58.00', 'flower_catalog/Pirouette.jpg', b'1', 3),
+(234013, 2, 'Buttercream', '65.00', 'flower_catalog/Buttercream.jpg', b'1', 2),
+(234014, 2, 'Santorini', '52.00', 'flower_catalog/Santorini.jpg', b'0', 2),
+(234015, 2, 'Nonna', '70.85', 'flower_catalog/Nonna.jpg', b'1', 2),
+(234016, 2, 'Amelia', '100.00', 'flower_catalog/Amelia.jpg', b'1', 2),
+(234017, 2, 'Finesse', '90.99', 'flower_catalog/Finesse.jpg', b'1', 2),
+(234018, 2, 'Rosy Glow', '74.99', 'flower_catalog/Rosy_Glow.jpg', b'1', 2),
+(234019, 2, 'Fifteen Peach', '79.55', 'flower_catalog/Fifteen_Peach.jpg', b'1', 2),
+(234020, 2, 'Magic Moment', '81.00', 'flower_catalog/Magic_Moment.jpg', b'1', 2),
+(234021, 3, 'Double the Buttercream', '79.00', 'flower_catalog/Double_the_Buttercream.jpg', b'1', 5),
+(234022, 3, 'Double the Unicorn', '85.99', 'flower_catalog/Double_the_Unicorn.jpg', b'0', 5),
+(234023, 3, 'Muse', '150.00', 'flower_catalog/Muse.jpg', b'1', 5),
+(234024, 3, 'Sonnet', '80.50', 'flower_catalog/Sonnet.jpg', b'1', 5),
+(234025, 3, 'Daydream', '90.00', 'flower_catalog/Daydream.jpg', b'1', 5),
+(234026, 3, 'Blossom', '115.00', 'flower_catalog/Blossom.jpg', b'1', 5),
+(234027, 3, 'Godetia', '70.00', 'flower_catalog/Godetia.jpg', b'1', 5),
+(234028, 3, 'Purple Iris', '65.99', 'flower_catalog/Purple_Iris.jpg', b'1', 5),
+(234029, 3, 'Isle of White', '74.99', 'flower_catalog/Isle_of_White.jpg', b'1', 5),
+(234030, 4, 'Luna', '65.70', 'flower_catalog/Luna.jpg', b'1', 1),
+(234031, 4, 'Juliet', '64.99', 'flower_catalog/Juliet.jpg', b'1', 1),
+(234032, 4, 'Regatta', '130.00', 'flower_catalog/Regatta.jpg', b'1', 1),
+(234033, 4, 'New Edwardian', '150.00', 'flower_catalog/New_Edwardian.jpg', b'1', 1),
+(234034, 4, 'Double_the_Mardi', '80.00', 'flower_catalog/Double_the_Mardi.jpg', b'0', 1),
+(234035, 4, 'Carmen', '75.90', 'flower_catalog/Carmen.jpg', b'0', 1),
+(234036, 4, 'Flora', '75.90', 'flower_catalog/Flora.jpg', b'1', 1),
+(234037, 5, 'Red and Blush', '40.00', 'flower_catalog/Red_and_Blush.jpg', b'1', 3),
+(234038, 5, 'Blooming Song', '64.99', 'flower_catalog/Blooming_Song.jpg', b'1', 3),
+(234039, 5, 'Pinky', '78.95', 'flower_catalog/Pinky.jpg', b'0', 3),
+(234040, 5, 'Poppins', '55.00', 'flower_catalog/Poppins.jpg', b'1', 3),
+(234041, 5, 'Signature', '102.95', 'flower_catalog/Signature.jpg', b'1', 3),
+(234042, 5, 'Loving', '42.99', 'flower_catalog/Loving.jpg', b'0', 3),
+(234043, 5, 'Winter_Spice', '61.00', 'flower_catalog/Winter_Spice.jpg', b'1', 3),
+(234044, 5, 'Cymbidium Orchids', '70.00', 'flower_catalog/Cymbidium_Orchids.jpg', b'1', 3),
+(234045, 5, 'Charm', '75.95', 'flower_catalog/Charm.jpg', b'1', 3),
+(234046, 5, 'Pink Splendid', '85.00', 'flower_catalog/Pink_Splendid.jpg', b'1', 3);
 
 -- --------------------------------------------------------
 
