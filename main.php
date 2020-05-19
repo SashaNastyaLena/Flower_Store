@@ -188,7 +188,7 @@
 
  
 <script>
-    let window.product = [];    
+ 
 
 </script>
 

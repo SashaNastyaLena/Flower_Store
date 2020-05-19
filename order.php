@@ -40,19 +40,14 @@
         <section>
             <div class="category"> 
 
-<script>
-    
-    let product;
-     
-     if(localStorage.key('product')){
-         product = JSON.parse(localStorage.getItem('product'));
-     }
-</script>
-
 <?php 
-include 'conection_bd.php';
-include 'checkProduct.php';
- ?>
+// include 'conection_bd.php';
+// include 'checkProduct.php';
+
+ 
+
+
+?>
   </div>
         </section>
     </div>

@@ -42,12 +42,21 @@
                         <h2>Tulips</h2>
                         <a href="category.php?category=<?php echo 'tulips'; ?>">more</a>
                     </div>
+                 
+
+
+                    
+            <!-- Вместо button ->  <a class="order_btn" href="order.php?order=   id   ">ORDER</a>   вместо id  =   id  цветка  -->
+                       
+                 
+                 
+                 
                     <div class="category_block">
                         <div class="category_box">
                             <img id="img" src="img/tulips_1.jpg" alt="tulips">
                             <h3 id="name">Bouquet "Сolorful splashes"</h3>
                             <p id="price">48 $</p>
-                            <button onclick="addToOrder()" class="order_btn">ORDER</button>
+                            <a class="order_btn" href="order.php?order=   id   ">ORDER</a>
                         </div>
                         <div class="category_box">
                             <img id="img" src="img/tulips_1.jpg" alt="tulips">

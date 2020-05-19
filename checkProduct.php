@@ -10,7 +10,7 @@ if($result) {
         echo "<img id='img' src=".$note['img_src']." alt='tulips'>";
         echo "<h3 id='name'>".$note['flower_name']."</h3>";
         echo '<p id="price" >'.$note['price'].'$</p>';
-        echo '<button onclick="addToOrder(this)" class="order_btn" id="'.$note['flower_id'].'">ORDER</button>';
+        echo '<a class="order_btn" href="order.php?order=>'.$note['flower_id'].'">ORDER</a>';
         echo '</div>';
     }    
 }   echo '</div>'; 

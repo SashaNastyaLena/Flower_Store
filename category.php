@@ -43,8 +43,7 @@ include 'checkProduct.php';
         </section>
     </div>
 </main>
-
-<script src="addToOrder.js"></script>
+ 
 
 </body>
 </html>
