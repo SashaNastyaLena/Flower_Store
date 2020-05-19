@@ -1,0 +1,127 @@
+body{
+	padding: 0px;
+	margin: 0px auto;
+	font-family: 'Titillium Web';
+}
+.containers{
+	width: 95%;
+	margin: 0px auto;
+}
+ nav{
+    margin-right:10%;
+	padding:  0;
+	display: flex;
+	justify-content: flex-end;
+ }
+.menu li{
+	float: left;
+	display: block;
+	text-decoration: none;
+}
+.menu a{ 
+	text-decoration: none;
+	color: #3d5111;
+	font-size: 20px; 
+	padding: 10px 15px;
+}
+.menu a:hover{
+	
+	background-color:  #FFF;
+	opacity: 0.4;
+	 
+} 
+header{
+    background-color:#ffcce9;
+    box-shadow: 0 3px 10px #ffcce9;
+}
+.main_blocks{
+    display: flex;
+    margin: 50px auto;
+
+}
+aside{
+    max-width: 400px;
+    margin-right: 15px;
+    border: 2px solid #ffcce9;
+    border-radius: 15px;
+    max-height: 280px;
+   
+}
+section{
+    margin: 0 auto;
+   
+}
+.categories_title{
+    background-color: rgb(224, 129, 224);
+    padding: 10px;
+    font-size: 30px;
+    margin: 0 auto;
+    border-radius: 15px 15px 0 0;
+}
+.categories_list{
+    margin: 0;
+    padding: 0;
+}
+.categories_list li a{
+   text-decoration: none;
+}
+.categories_list li {
+    list-style-type: none;
+    border-top: 1px solid black;
+    padding: 10px 20px;
+    font-size: 20px;
+
+}
+.categories_list li:hover{
+    background-color: blueviolet;
+}
+
+
+.category{
+    border: 1px solid blueviolet;
+    padding: 15px 10px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+
+}
+.category_block{
+    display: flex;
+}
+.category_box{
+    padding: 5px;
+    margin: 0 25px;
+    text-align: center;
+    
+}
+.category_box:hover{
+    box-shadow: 0 0 10px silver;
+    
+}
+.category_box img{
+    width: 300px;
+    height: 300px;
+}
+.category_title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.category_box h3{
+    margin: 10px 0 ;
+    
+}
+.price{
+    margin: 0;
+}
+#btn{
+    border: 1px solid tomato;
+    padding: 5px 10px;
+    background-color: inherit;
+    font-weight: bolder;
+    color: lightcoral;
+    margin: 10px;
+}
+#btn:hover{
+    text-shadow: 0 0 1px lightcoral;
+    box-shadow: 0 0 3px lightcoral;
+}

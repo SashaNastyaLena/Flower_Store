@@ -18,11 +18,7 @@ header{
 	background-size: cover;
 }
 
-.logo{
-	color: #6495ed;
-	font-size: 28px;
-	font-weight: 900;
-}
+ 
 .menu li{
 	float: left;
 	display: block;

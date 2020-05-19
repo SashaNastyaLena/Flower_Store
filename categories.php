@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="flower.css">
+   
+    <title>Flower</title>
+</head>
+<body>
+    <header>
+        <div class="containers">
+            <nav>
+                <ul class="menu">
+                     <li><a href="main.php">Main</a></li>	
+                    <li><a href="categories.php">Categories</a></li>	
+                    <li><a href="about.html">About us</a></li>	
+                    <li><a href="photogallery.html">Photogallery</a></li>	
+                    <li><a href="contact.html">Contact us</a></li>	
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="containers main_blocks">
+            <aside>
+                <h2 class="categories_title">
+                    Categories
+                </h2>
+               <ul class="categories_list">
+                    <li><a href="category.php?category=<?php echo 'tulips'; ?>">Tulips</a></li>
+                    <li><a href="category.php?category=<?php echo 'wedding'; ?>"> Wedding bouquets</a></li>
+                    <li><a href="category.php?category=<?php echo 'roses'; ?>"> Roses</a></li>
+                    <li><a href="category.php?category=<?php echo 'flowers'; ?>"> Flowers</a></li>
+                    <li><a href="category.php?category=<?php echo 'box'; ?>">Flowers box</a></li>
+        
+                </ul>
+            </aside>
+            <section>
+                <div class="category">
+                    <div class="category_title">
+                        <h2>Tulips</h2>
+                        <a href="category.php?category=<?php echo 'tulips'; ?>">more</a>
+                    </div>
+                    <div class="category_block">
+                        <div class="category_box">
+                            <img src="img/tulips_1.jpg" alt="tulips">
+                            <h3>Bouquet "Сolorful splashes"</h3>
+                            <p class="price">48 $</p>
+                            <button id="btn">ORDER</button>
+                        </div>
+                        <div class="category_box">
+                            <img src="img/tulips_1.jpg" alt="tulips">
+                            <h3>Bouquet "Сolorful splashes"</h3>
+                            <p class="price">48 $</p>
+                            <button id="btn">ORDER</button>
+                        </div>
+                        <div class="category_box">
+                            <img src="img/tulips_1.jpg" alt="tulips">
+                            <h3>Bouquet "Сolorful splashes"</h3>
+                            <p class="price">48 $</p>
+                            <button id="btn">ORDER</button>
+                        </div>
+                    </div>
+                 </div>
+                 <div class="category">
+                    <div class="category_title">
+                        <h2>Tulips</h2>
+                        <a href="category.php?category=<?php echo 'wedding'; ?>">more</a>
+                    </div>
+                    <div class="category_block">
+                        <div class="category_box">
+                            <img src="img/tulips_1.jpg" alt="tulips">
+                            <h3>Bouquet "Сolorful splashes"</h3>
+                            <p class="price">48 $</p>
+                            <button id="btn">ORDER</button>
+                        </div>
+                        <div class="category_box">
+                            <img src="img/tulips_1.jpg" alt="tulips">
+                            <h3>Bouquet "Сolorful splashes"</h3>
+                            <p class="price">48 $</p>
+                            <button id="btn">ORDER</button>
+                        </div>
+                        <div class="category_box">
+                            <img src="img/tulips_1.jpg" alt="tulips">
+                            <h3>Bouquet "Сolorful splashes"</h3>
+                            <p class="price">48 $</p>
+                            <button id="btn">ORDER</button>
+                        </div>
+                    </div>
+                 </div>
+                 <div class="category">
+                    <div class="category_title">
+                        <h2>Tulips</h2>
+                        <a href="category.php?category=<?php echo 'roses'; ?>"> more</a>
+                    </div>
+                    <div class="category_block">
+                        <div class="category_box">
+                            <img src="img/tulips_1.jpg" alt="tulips">
+                            <h3>Bouquet "Сolorful splashes"</h3>
+                            <p class="price">48 $</p>
+                            <button id="btn">ORDER</button>
+                        </div>
+                        <div class="category_box">
+                            <img src="img/tulips_1.jpg" alt="tulips">
+                            <h3>Bouquet "Сolorful splashes"</h3>
+                            <p class="price">48 $</p>
+                            <button id="btn">ORDER</button>
+                        </div>
+                        <div class="category_box">
+                            <img src="img/tulips_1.jpg" alt="tulips">
+                            <h3>Bouquet "Сolorful splashes"</h3>
+                            <p class="price">48 $</p>
+                            <button id="btn">ORDER</button>
+                        </div>
+                    </div>
+                 </div>
+                 <div class="category">
+                    <div class="category_title">
+                        <h2>Tulips</h2>
+                        <li><a href="category.php?category=<?php echo 'flowers'; ?>"> more</a></li>
+                   
+                    </div>
+                    <div class="category_block">
+                        <div class="category_box">
+                            <img src="img/tulips_1.jpg" alt="tulips">
+                            <h3>Bouquet "Сolorful splashes"</h3>
+                            <p class="price">48 $</p>
+                            <button id="btn">ORDER</button>
+                        </div>
+                        <div class="category_box">
+                            <img src="img/tulips_1.jpg" alt="tulips">
+                            <h3>Bouquet "Сolorful splashes"</h3>
+                            <p class="price">48 $</p>
+                            <button id="btn">ORDER</button>
+                        </div>
+                        <div class="category_box">
+                            <img src="img/tulips_1.jpg" alt="tulips">
+                            <h3>Bouquet "Сolorful splashes"</h3>
+                            <p class="price">48 $</p>
+                            <button id="btn">ORDER</button>
+                        </div>
+                    </div>
+                 </div>
+                 <div class="category">
+                    <div class="category_title">
+                        <h2>Tulips</h2>
+                        
+                    <li><a href="category.php?category=<?php echo 'box'; ?>">more</a></li>
+                    </div>
+                    <div class="category_block">
+                        <div class="category_box">
+                            <img src="img/tulips_1.jpg" alt="tulips">
+                            <h3>Bouquet "Сolorful splashes"</h3>
+                            <p class="price">48 $</p>
+                            <button id="btn">ORDER</button>
+                        </div>
+                        <div class="category_box">
+                            <img src="img/tulips_1.jpg" alt="tulips">
+                            <h3>Bouquet "Сolorful splashes"</h3>
+                            <p class="price">48 $</p>
+                            <button id="btn">ORDER</button>
+                        </div>
+                        <div class="category_box">
+                            <img src="img/tulips_1.jpg" alt="tulips">
+                            <h3>Bouquet "Сolorful splashes"</h3>
+                            <p class="price">48 $</p>
+                            <button id="btn">ORDER</button>
+                        </div>
+                    </div>
+                 </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="containers">
+
+        </div>
+    </footer>
+     
+</body>
+</html>
