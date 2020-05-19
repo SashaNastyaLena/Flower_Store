@@ -99,7 +99,7 @@ section{
 }
 .category_box img{
     width: 300px;
-    height: 300px;
+    /*height: 300px;*/
 }
 .category_title{
     display: flex;

@@ -40,7 +40,7 @@
                 <div class="category">
                     <div class="category_title">
                         <h2>Tulips</h2>
-                        <a href="category.php?category=<?php echo 'tulips'; ?>">more</a>
+                        <a href="category.php?category=<?php echo '1'; ?>">more</a>
                     </div>
                  
 
@@ -53,127 +53,127 @@
                  
                     <div class="category_block">
                         <div class="category_box">
-                            <img id="img" src="img/tulips_1.jpg" alt="tulips">
-                            <h3 id="name">Bouquet "Сolorful splashes"</h3>
-                            <p id="price">48 $</p>
-                            <a class="order_btn" href="order.php?order=   id   ">ORDER</a>
-                        </div>
-                        <div class="category_box">
-                            <img id="img" src="img/tulips_1.jpg" alt="tulips">
-                            <h3 id="name">Bouquet "Сolorful splashes"</h3>
-                            <p id="price">48 $</p>
+                            <img id="img" src="flower_catalog/Heartfelt.jpg" alt="Tulips">
+                            <h3 id="name">Heartfelt</h3>
+                            <p id="price">69.99 $</p>
                             <button onclick="addToOrder()" class="order_btn">ORDER</button>
                         </div>
                         <div class="category_box">
-                            <img id="img" src="img/tulips_1.jpg" alt="tulips">
-                            <h3 id="name">Bouquet "Сolorful splashes"</h3>
-                            <p id="price">48 $</p>  
+                            <img id="img" src="flower_catalog/All_the_Rage.jpg" alt="Tulips">
+                            <h3 id="name">All the Rage"</h3>
+                            <p id="price">45.00 $</p>
+                            <button onclick="addToOrder()" class="order_btn">ORDER</button>
+                        </div>
+                        <div class="category_box">
+                            <img id="img" src="flower_catalog/Tiger.jpg" alt="Tulips">
+                            <h3 id="name">Tiger</h3>
+                            <p id="price">54.50 $</p>  
                             <button onclick="addToOrder()" class="order_btn">ORDER</button>
                         </div>
                     </div>
                  </div>
                  <div class="category">
                     <div class="category_title">
-                        <h2>Tulips</h2>
-                        <a href="category.php?category=<?php echo 'wedding'; ?>">more</a>
+                        <h2>Wedding bouquets</h2>
+                        <a href="category.php?category=<?php echo '3'; ?>">more</a>
                     </div>
                     <div class="category_block">
                         <div class="category_box">
-                            <img id="img" src="img/tulips_1.jpg" alt="tulips">
-                            <h3 id="name">Bouquet "Сolorful splashes"</h3>
-                            <p id="price">48 $</p>
+                            <img id="img" src="flower_catalog/Double_the_Buttercream.jpg" alt="Wedding bouquets">
+                            <h3 id="name">Double the Buttercream</h3>
+                            <p id="price">79.00 $</p>
                             <button onclick="addToOrder()" class="order_btn">ORDER</button>
                         </div>
                         <div class="category_box">
-                            <img id="img" src="img/tulips_1.jpg" alt="tulips">
-                            <h3 id="name">Bouquet "Сolorful splashes"</h3>
-                            <p id="price">48 $</p>
+                            <img id="img" src="flower_catalog/Double_the_Unicorn.jpg" alt="Wedding bouquets">
+                            <h3 id="name">Double the Unicorn</h3>
+                            <p id="price">85.99 $</p>
                             <button onclick="addToOrder()" class="order_btn">ORDER</button>
                         </div>
                         <div class="category_box">
-                            <img id="img" src="img/tulips_1.jpg" alt="tulips">
-                            <h3 id="name">Bouquet "Сolorful splashes"</h3>
-                            <p id="price">48 $</p>  
+                            <img id="img" src="flower_catalog/Muse.jpg" alt="Wedding bouquets">
+                            <h3 id="name">Muse</h3>
+                            <p id="price">150.00 $</p>  
                             <button onclick="addToOrder()" class="order_btn">ORDER</button>
                         </div>
                     </div>
                  </div>
                  <div class="category">
                     <div class="category_title">
-                        <h2>Tulips</h2>
-                        <a href="category.php?category=<?php echo 'roses'; ?>"> more</a>
+                        <h2>Roses</h2>
+                        <a href="category.php?category=<?php echo '2'; ?>"> more</a>
                     </div>
                     <div class="category_block">
                         <div class="category_box">
-                        <img id="img" src="img/tulips_1.jpg" alt="tulips">
-                            <h3 id="name">Bouquet "Сolorful splashes"</h3>
-                            <p id="price">48 $</p>
+                        <img id="img" src="flower_catalog/Buttercream.jpg" alt="Roses">
+                            <h3 id="name">Buttercream</h3>
+                            <p id="price">65.00 $</p>
                             <button onclick="addToOrder()" class="order_btn">ORDER</button>
                         </div>
                         <div class="category_box">
-                        <img id="img" src="img/tulips_1.jpg" alt="tulips">
-                            <h3 id="name">Bouquet "Сolorful splashes"</h3>
-                            <p id="price">48 $</p>
+                        <img id="img" src="flower_catalog/Santorini.jpg" alt="Roses">
+                            <h3 id="name">Santorini</h3>
+                            <p id="price">52.00 $</p>
                             <button onclick="addToOrder()" class="order_btn">ORDER</button>
                         </div>
                         <div class="category_box">
-                        <img id="img" src="img/tulips_1.jpg" alt="tulips">
-                            <h3 id="name">Bouquet "Сolorful splashes"</h3>
-                            <p id="price">48 $</p>
+                        <img id="img" src="flower_catalog/Nonna.jpg" alt="Roses">
+                            <h3 id="name">Nonna</h3>
+                            <p id="price">70.85 $</p>
                             <button onclick="addToOrder()" class="order_btn">ORDER</button>
                         </div>
                     </div>
                  </div>
                  <div class="category">
                     <div class="category_title">
-                        <h2>Tulips</h2>
-                        <li><a href="category.php?category=<?php echo 'flowers'; ?>"> more</a></li>
+                        <h2>Flowers</h2>
+                        <a href="category.php?category=<?php echo '4'; ?>"> more</a>
                    
                     </div>
                     <div class="category_block">
                         <div class="category_box">
-                        <img id="img" src="img/tulips_1.jpg" alt="tulips">
-                            <h3 id="name">Bouquet "Сolorful splashes"</h3>
-                            <p id="price">48 $</p>
+                        <img id="img" src="flower_catalog/Luna.jpg" alt="Flowers">
+                            <h3 id="name">Luna</h3>
+                            <p id="price">65.70 $</p>
                             <button onclick="addToOrder()" class="order_btn">ORDER</button>
                         </div>
                         <div class="category_box">
-                        <img id="img" src="img/tulips_1.jpg" alt="tulips">
-                            <h3 id="name">Bouquet "Сolorful splashes"</h3>
-                            <p id="price">48 $</p>
+                        <img id="img" src="flower_catalog/Juliet.jpg" alt="Flowers">
+                            <h3 id="name">Juliet</h3>
+                            <p id="price">64.99 $</p>
                             <button onclick="addToOrder()" class="order_btn">ORDER</button>
                         </div>
                         <div class="category_box">
-                        <img id="img" src="img/tulips_1.jpg" alt="tulips">
-                            <h3 id="name">Bouquet "Сolorful splashes"</h3>
-                            <p id="price">48 $</p>
+                        <img id="img" src="flower_catalog/Regatta.jpg" alt="Flowers">
+                            <h3 id="name">Regatta</h3>
+                            <p id="price">130.00 $</p>
                             <button onclick="addToOrder()" class="order_btn">ORDER</button>
                         </div>
                     </div>
                  </div>
                  <div class="category">
                     <div class="category_title">
-                        <h2>Tulips</h2>
+                        <h2>Flowers box</h2>
                         
-                    <li><a href="category.php?category=<?php echo 'box'; ?>">more</a></li>
+                    <a href="category.php?category=<?php echo '5'; ?>">more</a>
                     </div>
                     <div class="category_block">
                         <div class="category_box">
-                        <img id="img" src="img/tulips_1.jpg" alt="tulips">
-                            <h3 id="name">Bouquet "Сolorful splashes"</h3>
-                            <p id="price">48 $</p>
+                        <img id="img" src="flower_catalog/Red_and_Blush.jpg" alt="Flowers box">
+                            <h3 id="name">Red and Blush</h3>
+                            <p id="price">40.00 $</p>
                             <button onclick="addToOrder()" class="order_btn">ORDER</button>
                         </div>
                         <div class="category_box">
-                        <img id="img" src="img/tulips_1.jpg" alt="tulips">
-                            <h3 id="name">Bouquet "Сolorful splashes"</h3>
-                            <p id="price">48 $</p>
+                        <img id="img" src="flower_catalog/Blooming_Song.jpg" alt="Flowers box">
+                            <h3 id="name">Blooming Song</h3>
+                            <p id="price">64.99 $</p>
                             <button onclick="addToOrder()" class="order_btn">ORDER</button>
                         </div>
                         <div class="category_box">
-                        <img id="img" src="img/tulips_1.jpg" alt="tulips">
-                            <h3 id="name">Bouquet "Сolorful splashes"</h3>
-                            <p id="price">48 $</p>
+                        <img id="img" src="flower_catalog/Pinky.jpg" alt="Flowers box">
+                            <h3 id="name">Pinky</h3>
+                            <p id="price">78.95 $</p>
                             <button onclick="addToOrder()" class="order_btn">ORDER</button>
                         </div>
                     </div>
