@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: May 19, 2020 at 05:53 PM
+-- Generation Time: May 19, 2020 at 08:18 PM
 -- Server version: 8.0.17
 -- PHP Version: 7.3.10
 
@@ -49,6 +49,35 @@ INSERT INTO `category` (`category_id`, `category`) VALUES
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `city`
+--
+
+CREATE TABLE `city` (
+  `city_id` int(11) NOT NULL,
+  `city` varchar(250) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+--
+-- Dumping data for table `city`
+--
+
+INSERT INTO `city` (`city_id`, `city`) VALUES
+(1, 'Kiev'),
+(2, 'Kharkov'),
+(3, 'Odessa'),
+(4, 'Dnepropetrovsk'),
+(5, 'Zaporozhye'),
+(6, 'Krivoy Rog'),
+(7, 'Nikolaev'),
+(8, 'Vinnitsa'),
+(9, 'Poltava'),
+(10, 'Kherson'),
+(11, 'Chernihiv'),
+(12, 'Cherkasy');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `client`
 --
 
@@ -57,7 +86,7 @@ CREATE TABLE `client` (
   `client_first_name` varchar(250) NOT NULL,
   `client_second_name` varchar(250) DEFAULT NULL,
   `client_surname` varchar(250) NOT NULL,
-  `city` varchar(250) NOT NULL,
+  `city_id` int(11) NOT NULL,
   `adress` varchar(250) NOT NULL,
   `delivery_id` int(11) NOT NULL,
   `payment_method_id` int(11) NOT NULL
@@ -70,9 +99,19 @@ CREATE TABLE `client` (
 --
 
 CREATE TABLE `comments` (
-  `client_id` int(11) NOT NULL,
+  `commenter_name` varchar(250) NOT NULL,
   `comment_text` mediumtext CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+--
+-- Dumping data for table `comments`
+--
+
+INSERT INTO `comments` (`commenter_name`, `comment_text`) VALUES
+('Viktoriya', 'Last year I bought a mix of onion flowers. All flowers have bloomed this year. Very happy with the purchase!'),
+('Alex', 'All tulips from my garden were bought at the Florium store. Not one variety has not repeated. The beauty is extraordinary. Thanks to the employees of Florium.'),
+('Katya', 'Good store and good product. I ordered bulbs of lilies, gladioli, freesia and amaryllis at a promotional price. Everything has arrived, the bulbs are in excellent condition and everyone has already entered! On all three amaryllis there are pedicels, on one even two, that is, everyone will bloom! Plus I received three bulbs of giant lilies as a gift! Thank you very much! Prosperity to your store and profitable customers!'),
+('Oksana', 'Good store and good product. I ordered bulbs of lilies, gladioli, freesia and amaryllis at a promotional price. Everything came of good quality, well packaged. All planted and already sprouted. Waiting for all the flowers to bloom. Thank you very much for your work and special thanks for the gift in the form of three giant lilies! Good luck and prosperity to your store!');
 
 -- --------------------------------------------------------
 
@@ -233,18 +272,19 @@ ALTER TABLE `category`
   ADD PRIMARY KEY (`category_id`);
 
 --
+-- Indexes for table `city`
+--
+ALTER TABLE `city`
+  ADD PRIMARY KEY (`city_id`);
+
+--
 -- Indexes for table `client`
 --
 ALTER TABLE `client`
   ADD PRIMARY KEY (`client_id`),
   ADD KEY `client_delivery_id` (`delivery_id`) USING BTREE,
-  ADD KEY `client_payment_method_id` (`payment_method_id`) USING BTREE;
-
---
--- Indexes for table `comments`
---
-ALTER TABLE `comments`
-  ADD KEY `comments_client_id` (`client_id`) USING BTREE;
+  ADD KEY `client_payment_method_id` (`payment_method_id`) USING BTREE,
+  ADD KEY `client_id` (`city_id`);
 
 --
 -- Indexes for table `delivery`
@@ -294,14 +334,9 @@ ALTER TABLE `provider`
 -- Constraints for table `client`
 --
 ALTER TABLE `client`
+  ADD CONSTRAINT `client_id` FOREIGN KEY (`city_id`) REFERENCES `city` (`city_id`) ON DELETE CASCADE ON UPDATE CASCADE,
   ADD CONSTRAINT `delivery_id` FOREIGN KEY (`delivery_id`) REFERENCES `delivery` (`delivery_id`) ON DELETE CASCADE ON UPDATE CASCADE,
   ADD CONSTRAINT `payment_method_id` FOREIGN KEY (`payment_method_id`) REFERENCES `payment_method` (`payment_method_id`) ON DELETE CASCADE ON UPDATE CASCADE;
-
---
--- Constraints for table `comments`
---
-ALTER TABLE `comments`
-  ADD CONSTRAINT `client_id` FOREIGN KEY (`client_id`) REFERENCES `client` (`client_id`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
 -- Constraints for table `flower_catalog`
