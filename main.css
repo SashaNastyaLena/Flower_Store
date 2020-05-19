@@ -238,6 +238,7 @@ section{
 	text-align: left;
 	display: flex;
 	flex-direction: column-reverse;
+	overflow-y: scroll;
 }
 #review_box{
 	display: none;

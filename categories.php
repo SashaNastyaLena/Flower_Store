@@ -28,11 +28,11 @@
                     Categories
                 </h2>
                <ul class="categories_list">
-                    <li><a href="category.php?category=<?php echo 'tulips'; ?>">Tulips</a></li>
-                    <li><a href="category.php?category=<?php echo 'wedding'; ?>"> Wedding bouquets</a></li>
-                    <li><a href="category.php?category=<?php echo 'roses'; ?>"> Roses</a></li>
-                    <li><a href="category.php?category=<?php echo 'flowers'; ?>"> Flowers</a></li>
-                    <li><a href="category.php?category=<?php echo 'box'; ?>">Flowers box</a></li>
+                    <li><a href="category.php?category=<?php echo '1'; ?>"> Tulips </a></li>
+                    <li><a href="category.php?category=<?php echo '3'; ?>"> Wedding bouquets </a></li>
+                    <li><a href="category.php?category=<?php echo '2'; ?>"> Roses </a></li>
+                    <li><a href="category.php?category=<?php echo '4'; ?>"> Flowers </a></li>
+                    <li><a href="category.php?category=<?php echo '5'; ?>"> Flowers box </a></li>
         
                 </ul>
             </aside>
