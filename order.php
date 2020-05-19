@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="flower.css">
-    <title>Document</title>
+    <title>order</title>
 </head>
 <body>
            
@@ -16,7 +16,7 @@
             <li><a href="categories.php">Categories</a></li>	
             <li><a href="about.html">About us</a></li>	
             <li><a href="photogallery.html">Photogallery</a></li>	
-            <li><a href="contact.html">Contact us</a></li>			
+            <li><a href="contact.html">Contact us</a></li>		
             </ul>
         </nav>
     </div>
@@ -24,27 +24,39 @@
 <main>
     <div class="containers main_blocks">
         <aside>
-            <h2 class="categories_title">Categories</h2>
+            <h2 class="categories_title">
+                Categories
+            </h2>
             <ul class="categories_list">
                 <li><a href="category.php?category=<?php echo 'tulips'; ?>">Tulips</a></li>
                 <li><a href="category.php?category=<?php echo 'wedding'; ?>"> Wedding bouquets</a></li>
                 <li><a href="category.php?category=<?php echo 'roses'; ?>"> Roses</a></li>
                 <li><a href="category.php?category=<?php echo 'flowers'; ?>"> Flowers</a></li>
                 <li><a href="category.php?category=<?php echo 'box'; ?>">Flowers box</a></li>
+    
             </ul>
         </aside>
+
         <section>
             <div class="category"> 
+
+<script>
+    
+    let product;
+     
+     if(localStorage.key('product')){
+         product = JSON.parse(localStorage.getItem('product'));
+     }
+</script>
+
 <?php 
 include 'conection_bd.php';
 include 'checkProduct.php';
-?>
-            </div>
+ ?>
+  </div>
         </section>
     </div>
 </main>
-
-<script src="addToOrder.js"></script>
 
 </body>
 </html>

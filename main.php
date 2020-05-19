@@ -185,5 +185,12 @@
 		cancelBox();
 	}
  </script>
+
+ 
+<script>
+    let window.product = [];    
+
+</script>
+
 </body>
 </html>

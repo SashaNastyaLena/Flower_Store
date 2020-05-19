@@ -44,22 +44,22 @@
                     </div>
                     <div class="category_block">
                         <div class="category_box">
-                            <img src="img/tulips_1.jpg" alt="tulips">
-                            <h3>Bouquet "Сolorful splashes"</h3>
-                            <p class="price">48 $</p>
-                            <button id="btn">ORDER</button>
+                            <img id="img" src="img/tulips_1.jpg" alt="tulips">
+                            <h3 id="name">Bouquet "Сolorful splashes"</h3>
+                            <p id="price">48 $</p>
+                            <button onclick="addToOrder()" class="order_btn">ORDER</button>
                         </div>
                         <div class="category_box">
-                            <img src="img/tulips_1.jpg" alt="tulips">
-                            <h3>Bouquet "Сolorful splashes"</h3>
-                            <p class="price">48 $</p>
-                            <button id="btn">ORDER</button>
+                            <img id="img" src="img/tulips_1.jpg" alt="tulips">
+                            <h3 id="name">Bouquet "Сolorful splashes"</h3>
+                            <p id="price">48 $</p>
+                            <button onclick="addToOrder()" class="order_btn">ORDER</button>
                         </div>
                         <div class="category_box">
-                            <img src="img/tulips_1.jpg" alt="tulips">
-                            <h3>Bouquet "Сolorful splashes"</h3>
-                            <p class="price">48 $</p>
-                            <button id="btn">ORDER</button>
+                            <img id="img" src="img/tulips_1.jpg" alt="tulips">
+                            <h3 id="name">Bouquet "Сolorful splashes"</h3>
+                            <p id="price">48 $</p>  
+                            <button onclick="addToOrder()" class="order_btn">ORDER</button>
                         </div>
                     </div>
                  </div>
@@ -70,22 +70,22 @@
                     </div>
                     <div class="category_block">
                         <div class="category_box">
-                            <img src="img/tulips_1.jpg" alt="tulips">
-                            <h3>Bouquet "Сolorful splashes"</h3>
-                            <p class="price">48 $</p>
-                            <button id="btn">ORDER</button>
+                            <img id="img" src="img/tulips_1.jpg" alt="tulips">
+                            <h3 id="name">Bouquet "Сolorful splashes"</h3>
+                            <p id="price">48 $</p>
+                            <button onclick="addToOrder()" class="order_btn">ORDER</button>
                         </div>
                         <div class="category_box">
-                            <img src="img/tulips_1.jpg" alt="tulips">
-                            <h3>Bouquet "Сolorful splashes"</h3>
-                            <p class="price">48 $</p>
-                            <button id="btn">ORDER</button>
+                            <img id="img" src="img/tulips_1.jpg" alt="tulips">
+                            <h3 id="name">Bouquet "Сolorful splashes"</h3>
+                            <p id="price">48 $</p>
+                            <button onclick="addToOrder()" class="order_btn">ORDER</button>
                         </div>
                         <div class="category_box">
-                            <img src="img/tulips_1.jpg" alt="tulips">
-                            <h3>Bouquet "Сolorful splashes"</h3>
-                            <p class="price">48 $</p>
-                            <button id="btn">ORDER</button>
+                            <img id="img" src="img/tulips_1.jpg" alt="tulips">
+                            <h3 id="name">Bouquet "Сolorful splashes"</h3>
+                            <p id="price">48 $</p>  
+                            <button onclick="addToOrder()" class="order_btn">ORDER</button>
                         </div>
                     </div>
                  </div>
@@ -96,22 +96,22 @@
                     </div>
                     <div class="category_block">
                         <div class="category_box">
-                            <img src="img/tulips_1.jpg" alt="tulips">
-                            <h3>Bouquet "Сolorful splashes"</h3>
-                            <p class="price">48 $</p>
-                            <button id="btn">ORDER</button>
+                        <img id="img" src="img/tulips_1.jpg" alt="tulips">
+                            <h3 id="name">Bouquet "Сolorful splashes"</h3>
+                            <p id="price">48 $</p>
+                            <button onclick="addToOrder()" class="order_btn">ORDER</button>
                         </div>
                         <div class="category_box">
-                            <img src="img/tulips_1.jpg" alt="tulips">
-                            <h3>Bouquet "Сolorful splashes"</h3>
-                            <p class="price">48 $</p>
-                            <button id="btn">ORDER</button>
+                        <img id="img" src="img/tulips_1.jpg" alt="tulips">
+                            <h3 id="name">Bouquet "Сolorful splashes"</h3>
+                            <p id="price">48 $</p>
+                            <button onclick="addToOrder()" class="order_btn">ORDER</button>
                         </div>
                         <div class="category_box">
-                            <img src="img/tulips_1.jpg" alt="tulips">
-                            <h3>Bouquet "Сolorful splashes"</h3>
-                            <p class="price">48 $</p>
-                            <button id="btn">ORDER</button>
+                        <img id="img" src="img/tulips_1.jpg" alt="tulips">
+                            <h3 id="name">Bouquet "Сolorful splashes"</h3>
+                            <p id="price">48 $</p>
+                            <button onclick="addToOrder()" class="order_btn">ORDER</button>
                         </div>
                     </div>
                  </div>
@@ -123,22 +123,22 @@
                     </div>
                     <div class="category_block">
                         <div class="category_box">
-                            <img src="img/tulips_1.jpg" alt="tulips">
-                            <h3>Bouquet "Сolorful splashes"</h3>
-                            <p class="price">48 $</p>
-                            <button id="btn">ORDER</button>
+                        <img id="img" src="img/tulips_1.jpg" alt="tulips">
+                            <h3 id="name">Bouquet "Сolorful splashes"</h3>
+                            <p id="price">48 $</p>
+                            <button onclick="addToOrder()" class="order_btn">ORDER</button>
                         </div>
                         <div class="category_box">
-                            <img src="img/tulips_1.jpg" alt="tulips">
-                            <h3>Bouquet "Сolorful splashes"</h3>
-                            <p class="price">48 $</p>
-                            <button id="btn">ORDER</button>
+                        <img id="img" src="img/tulips_1.jpg" alt="tulips">
+                            <h3 id="name">Bouquet "Сolorful splashes"</h3>
+                            <p id="price">48 $</p>
+                            <button onclick="addToOrder()" class="order_btn">ORDER</button>
                         </div>
                         <div class="category_box">
-                            <img src="img/tulips_1.jpg" alt="tulips">
-                            <h3>Bouquet "Сolorful splashes"</h3>
-                            <p class="price">48 $</p>
-                            <button id="btn">ORDER</button>
+                        <img id="img" src="img/tulips_1.jpg" alt="tulips">
+                            <h3 id="name">Bouquet "Сolorful splashes"</h3>
+                            <p id="price">48 $</p>
+                            <button onclick="addToOrder()" class="order_btn">ORDER</button>
                         </div>
                     </div>
                  </div>
@@ -150,22 +150,22 @@
                     </div>
                     <div class="category_block">
                         <div class="category_box">
-                            <img src="img/tulips_1.jpg" alt="tulips">
-                            <h3>Bouquet "Сolorful splashes"</h3>
-                            <p class="price">48 $</p>
-                            <button id="btn">ORDER</button>
+                        <img id="img" src="img/tulips_1.jpg" alt="tulips">
+                            <h3 id="name">Bouquet "Сolorful splashes"</h3>
+                            <p id="price">48 $</p>
+                            <button onclick="addToOrder()" class="order_btn">ORDER</button>
                         </div>
                         <div class="category_box">
-                            <img src="img/tulips_1.jpg" alt="tulips">
-                            <h3>Bouquet "Сolorful splashes"</h3>
-                            <p class="price">48 $</p>
-                            <button id="btn">ORDER</button>
+                        <img id="img" src="img/tulips_1.jpg" alt="tulips">
+                            <h3 id="name">Bouquet "Сolorful splashes"</h3>
+                            <p id="price">48 $</p>
+                            <button onclick="addToOrder()" class="order_btn">ORDER</button>
                         </div>
                         <div class="category_box">
-                            <img src="img/tulips_1.jpg" alt="tulips">
-                            <h3>Bouquet "Сolorful splashes"</h3>
-                            <p class="price">48 $</p>
-                            <button id="btn">ORDER</button>
+                        <img id="img" src="img/tulips_1.jpg" alt="tulips">
+                            <h3 id="name">Bouquet "Сolorful splashes"</h3>
+                            <p id="price">48 $</p>
+                            <button onclick="addToOrder()" class="order_btn">ORDER</button>
                         </div>
                     </div>
                  </div>
@@ -178,5 +178,9 @@
         </div>
     </footer>
      
+    <script src="addToOrder.js"></script>
+    
+ 
+
 </body>
 </html>
