@@ -10,7 +10,7 @@ nav{
 	justify-content: flex-end;
 }
 header{
-	background:url("img/back.jpg"); 
+	background:url("img/aboutus.jpg"); 
 	background-size: cover;
     height: 100vh;
 }
@@ -38,7 +38,7 @@ header{
 .header_title{
     position: relative;
     top: 10%;
-    color: #a28397; 
+    color: #B14D7D; 
     font-size: 40px;
     text-align: center;
     text-shadow: 2px 2px 5px #CAA0B1;;
@@ -53,6 +53,7 @@ main{
 	
 }
 .block{
+    border: 2px dotted #DAE2E5;
 	padding: 10px;
 	 
 	margin: 20px 0; 
@@ -74,6 +75,7 @@ main{
 	margin-right: 20px;
 	width: 400px;
 	text-align: center;
+	border: 2px solid #DAE2E5;
 	background-color: white;
 	padding: 5px;
 }
