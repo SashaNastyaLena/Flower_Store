@@ -3,6 +3,8 @@
 <head>
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="main.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+	integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Flowers</title>
 </head>
@@ -10,11 +12,10 @@
 	<header>
 		<nav class="container">
 			<ul class="menu">
-		 
-            <li><a href="categories.php">Categories</a></li>	
-            <li><a href="about.html">About us</a></li>	
-            <li><a href="photogallery.html">Photogallery</a></li>	
-            <li><a href="contact.html">Contact us</a></li>	
+				<li><a href="categories.php">Categories</a></li>	
+				<li><a href="about.html">About us</a></li>	
+				<li><a href="photogallery.html">Photogallery</a></li>	
+				<li><a href="contact.html">Contact us</a></li>	
 			</ul>
 		</nav>
 	<div class="main">
@@ -31,7 +32,7 @@
 			<h2 class="content__title">WHAT WE PROPOPSE</h2>
 		
 			<div class="propose">
-				<a href="#"><img src="img/1.jpg" style="width: 400px; height:400px;"></a>
+				<img src="img/1.jpg" style="width: 400px; height:400px;">
 				<div class="propose__cont">
 					<div class="number"><hr ><span class="num">01</span><hr></div> 
 					<h2>BIRTHDAY FLOWERS</h2>
@@ -43,8 +44,8 @@
 				</div>
 			
 			</div>
-			<div class="propose">
-				<div class="propose__cont">
+			<div class="propose propose__cont2">
+				<div class="propose__cont ">
 					<div class="number"><hr ><span class="num">02</span><hr></div> 
 					<h2>WEDDING FLOWERS</h2>
 					<p class="propose__text">  
@@ -54,12 +55,12 @@
 						in silver vases? For your spring fling, look no further than our tulip artificial flowers wedding
 						bouquet floral arrangements from our lily, tulip & peony collection. </p>
 				</div>
-				<a href="#"><img src="img/2.jpg" style="width: 400px; height:400px;"></a>
+				<img src="img/2.jpg" style="width: 400px; height:400px;">
 			</div>
 			<img> 
 
 			<div class="propose">
-				<a href="#"><img src="img/3.jpg" style="width: 400px; height:400px;"></a>
+				<img src="img/3.jpg" style="width: 400px; height:400px;">
 				<div class="propose__cont">
 					<div class="number"><hr><span class="num">03</span><hr> </div>
 					<h2>FLOWERS FOR ANY OCCASIONS</h2>
@@ -77,11 +78,11 @@
 	<div class="content">
 	<div class="wrapper">
 		<h2 class="item">Flowers are not just a gift for any reason, it is another way to emphasize your uniqueness</h2>
-		<div class="item1"><img src="img/item6.PNG" ><h3>Wedding bouquets</h3></div>
-		<div class="item2"><img src="img/item2.PNG" ><h3>Tulips</h3></div>
-		<div class="item3"><img src="img/item3.PNG" ><h3>Flowers</h3></div>
-		<div class="item5"><img src="img/item4.PNG" ><h3>Roses</h3></div>
-		<div class="item6"><img src="img/item1.PNG" ><h3>Flowers box</h3></div>
+		<div class="item1"><a href="category.php?category=<?php echo '3'; ?>"><img src="img/item6.PNG" ></a><h3>Wedding bouquets</h3></div>
+		<div class="item2"><a href="category.php?category=<?php echo '1'; ?>"><img src="img/item2.PNG" ></a><h3>Tulips</h3></div>
+		<div class="item3"><a href="category.php?category=<?php echo '4'; ?>"><img src="img/item3.PNG" ></a><h3>Flowers</h3></div>
+		<div class="item5"><a href="category.php?category=<?php echo '2'; ?>"><img src="img/item4.PNG" ></a><h3>Roses</h3></div>
+		<div class="item6"><a href="category.php?category=<?php echo '5'; ?>"><img src="img/item1.PNG" ></a><h3>Flowers box</h3></div>
 		</div>
 	</div>
  </section>
@@ -106,48 +107,70 @@
 		<h2 class="content__title">REVIEWS</h2>	
 		
 		<div id="reviews">
-		
-			<div class="review">
-				<p class="review__name"><b>Oksana </b><time>May 1, 2020</time></p> 
-				<p>Good store and good product. I ordered bulbs of lilies, gladioli, freesia and amaryllis at a promotional price. Everything came of good quality, well packaged. All planted and already sprouted. Waiting for all the flowers to bloom. Thank you very much for your work and special thanks for the gift in the form of three giant lilies! Good luck and prosperity to your store!</p>
-			</div>
-			<div class="review">
-				<p class="review__name"><b>Katya </b><time>May 3, 2020</time></p> 
-				<p>Good store and good product. I ordered bulbs of lilies, gladioli, freesia and amaryllis at a promotional price. Everything has arrived, the bulbs are in excellent condition and everyone has already entered! On all three amaryllis there are pedicels, on one even two, that is, everyone will bloom! Plus I received three bulbs of giant lilies as a gift! Thank you very much! Prosperity to your store and profitable customers!</p>
-			</div>
-			<div class="review">
-				<p class="review__name"><b>Alex </b><time>May 6, 2020</time></p> 
-				<p>All tulips from my garden were bought at the Florium store. Not one variety has not repeated. The beauty is extraordinary. Thanks to the employees of Florium.</p>
-			</div>
-			<div class="review">
-				<p class="review__name"><b>Viktoriya </b><time>May 21, 2020</time></p> 
-				<p>Last year I bought a mix of onion flowers. All flowers have bloomed this year. Very happy with the purchase!</p>
-			</div>
+		<?php
+		include 'conection_bd.php';
+		$query = "SELECT * FROM comments"; 
+		$result = mysqli_query ($link, $query);  
+		if($result) {
+			
+			while ($note = mysqli_fetch_array($result)){ 
+				echo '<div class="review">'; 
+				echo "<p class='review__name'><b>".$note['commenter_name']."</b></p>";
+				echo '<p>'.$note['comment_text'].'$</p> ';
+				echo '</div>';
+			}    
+		}   
+			mysqli_close($link);
+		?>	 
 		</div>
 		<button id="review__btn" onclick="reviewBox()" class="main-btn">Give us your feedback</button>
-	</div>
-	<div id="review_box">
-		<p>Name:</p>
-		<p><input type="text" id="name__review" size="60"></p>
-		<p>Review:</p>
-		<p><textarea id="review__text" rows="10" cols="60" ></textarea></p>
-		<div class="button"> 
-			<button id="review_box__btn" onclick="addReview(this)">submit</button>
-			<button id="review_box__btn" onclick="cancelBox(this)">cancel</button>
 		</div>
-	</div>
- </section>
-
+		<div id="review_box">
+			<form  method="post">
+				<p>Name:</p>
+				<p><input type="text" name="name" id="name__review" size="60"></p>
+				<p>Review:</p>
+				<p><textarea id="review__text" name="text" rows="10" cols="60" ></textarea></p>
+				<div class="button"> 
+					<button class="review_box__btn" id="review_box__btnl" name='addReview'>submit</button>
+					<button class="review_box__btn" id="review_box__btnr" onclick="cancelBox(this)">cancel</button>
+				</div>
+			</form>
+		</div>
+	</section>
+	<?php
+include 'conection_bd.php';
+ 
+if( isset( $_POST['addReview'] ) )
+    {	
+        $name = $_POST['name'];
+        $text = $_POST['text'];
+        
+        $query = "INSERT INTO comments(commenter_name, comment_text) VALUES('$name','$text')";
+        $query_note = mysqli_query($link, $query);
+        
+        
+    }
+?>
 
 	<footer>
 		<div class="content footer">
 			<div class="footer__left">
-				<p>Flowers</p>
-				<p>Our company</p>
+				 
+					<ul class="menu">
+						<li><a href="categories.php">Categories</a></li>	
+						<li><a href="about.html">About us</a></li>	
+						<li><a href="photogallery.html">Photogallery</a></li>	
+						<li><a href="contact.html">Contact us</a></li>	
+					</ul>
+				 
 			</div>
 			<div class="footer__right">
-				<p>Flowers</p>
-				<p>Our company</p>
+				<i class="fab fa-instagram-square"></i>
+				<i class="fab fa-facebook-square"></i>
+				<i class="far fa-envelope"></i>
+				<i class="fab fa-telegram-plane"></i>
+			 
 			</div>			
 
 		</div>
@@ -162,28 +185,7 @@
 		let box = document.getElementById('review_box');
 		box.style.display = "none";
 	}
-	function addReview(){
-		let name = document.getElementById('name__review');
-		let text = document.getElementById('review__text');
-		let reviews = document.getElementById('reviews');
-		
-		let box = document.createElement('div');
-		box.classList.add('review');
-
-		let p = document.createElement('p');
-		p.classList.add('review__name');
-
-		let time = new Date();
-		
-		let p2 = document.createElement('p');
-		p2.innerHTML = text.value;
-		p.innerHTML = `<b>${name.value}</b><time>${time.getMonth()} ${time.getDay()}, ${time.getFullYear()}</time>`
-		 
-		box.appendChild(p);
-		box.appendChild(p2);
-		reviews.appendChild(box);
-		cancelBox();
-	}
+ 
  </script>
 
  

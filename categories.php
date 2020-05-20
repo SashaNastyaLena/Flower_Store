@@ -42,15 +42,6 @@
                         <h2>Tulips</h2>
                         <a href="category.php?category=<?php echo '1'; ?>">more</a>
                     </div>
-                 
-
-
-                    
-            <!-- Вместо button ->  <a class="order_btn" href="order.php?order=   id   ">ORDER</a>   вместо id  =   id  цветка  -->
-                       
-                 
-                 
-                 
                     <div class="category_block">
                         <div class="category_box">
                             <img id="img" src="flower_catalog/Heartfelt.jpg" alt="Tulips">
@@ -186,10 +177,6 @@
 
         </div>
     </footer>
-     
-    <script src="addToOrder.js"></script>
     
- 
-
 </body>
 </html>

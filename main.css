@@ -4,7 +4,7 @@ body{
 	font-family: 'Titillium Web';
 }
 .container{
-	width: 1200px;
+	max-width: 1200px;
 	height: 65px;
 	margin: 0px auto;
 }
@@ -141,13 +141,11 @@ header{
 	display:flex;
 	justify-content: space-between;
 	align-items: center;
+	margin: 10px 0 ;
 }
 .propose__cont{ 
 	width: 400px;
-}
-.propose img:hover{
-	opacity: 0.5;
-	position: relative;
+	margin: auto;
 
 } 
 hr{
@@ -181,7 +179,11 @@ section{
 	grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
 	padding: 20px 0;
   }
+.wrapper div:hover{
+	opacity: 0.5;
+ 
 
+} 
  .wrapper img{
 	max-width: 300px;
 	margin: 10px;
@@ -239,27 +241,90 @@ section{
 	display: flex;
 	flex-direction: column-reverse;
 	overflow-y: scroll;
+	height: 500px;
 }
 #review_box{
 	display: none;
+	font-size: larger;
 	position: fixed;
 	top: 20%;
-	left: 30%;
+	left: 31%;
 	width: 500px;
-	border: 2px solid black;
+	border: 2px solid #FAD4D9;
+	border-radius: 15px;
 	padding: 30px;
-	background-color: rgb(250, 248, 234);
+	background-color: #FFFEFE;
+	box-shadow: 0 0 40px #FAD4D9;
+}
+.review_box__btn{
+ 
+	padding: 5px 10px;
+	border: 2px solid #FAD4D9;
+	border-radius: 10px;
+	background-color: #FFFEFE;
+	box-shadow: 0 0 10px #FAD4D9;
+	
 }
 .button{
 	display: flex;
 	justify-content: space-between;
 	width: 450px;
 }
+
+
 footer{
-	padding:20px;
+	padding:20px 0;
 	background-color: rgb(29, 28, 28);
 }
 .footer{
 	display: flex;
 	justify-content: space-between;
 }
+ 
+.footer__left a:hover{
+	background-color:  #000;
+	opacity: 0.5;
+} 
+
+.footer__left a{
+	color: #F6F5F3;
+}
+.footer__right{
+	margin-right: 40px;
+}
+.footer__right i { 
+	color: #F6F5F3;
+	font-size: larger;
+	margin-top: 20px;
+	margin-right: 20px;
+}
+
+.footer__right i:hover{
+	background-color:  #000;
+	opacity: 0.5;
+	cursor: pointer;
+} 
+
+
+@media (max-width:1200px) { 
+	.propose{
+		display: block;
+		margin: auto;
+	}
+	.propose__cont2{
+		display: flex;
+		flex-direction: column-reverse;
+	}
+	.wrapper:nth-child(n){
+		display: inline-block;
+		 
+		padding: 20px 0;
+		 
+	 
+	  }
+	 
+	 .wrapper img{
+		max-width: 300px;
+		margin: 10px;
+	 } 
+  }
