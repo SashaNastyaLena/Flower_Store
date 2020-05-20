@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: May 19, 2020 at 08:18 PM
+-- Generation Time: May 20, 2020 at 02:24 PM
 -- Server version: 8.0.17
 -- PHP Version: 7.3.10
 
@@ -99,6 +99,7 @@ CREATE TABLE `client` (
 --
 
 CREATE TABLE `comments` (
+  `comments_id` int(11) NOT NULL,
   `commenter_name` varchar(250) NOT NULL,
   `comment_text` mediumtext CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
@@ -107,11 +108,11 @@ CREATE TABLE `comments` (
 -- Dumping data for table `comments`
 --
 
-INSERT INTO `comments` (`commenter_name`, `comment_text`) VALUES
-('Viktoriya', 'Last year I bought a mix of onion flowers. All flowers have bloomed this year. Very happy with the purchase!'),
-('Alex', 'All tulips from my garden were bought at the Florium store. Not one variety has not repeated. The beauty is extraordinary. Thanks to the employees of Florium.'),
-('Katya', 'Good store and good product. I ordered bulbs of lilies, gladioli, freesia and amaryllis at a promotional price. Everything has arrived, the bulbs are in excellent condition and everyone has already entered! On all three amaryllis there are pedicels, on one even two, that is, everyone will bloom! Plus I received three bulbs of giant lilies as a gift! Thank you very much! Prosperity to your store and profitable customers!'),
-('Oksana', 'Good store and good product. I ordered bulbs of lilies, gladioli, freesia and amaryllis at a promotional price. Everything came of good quality, well packaged. All planted and already sprouted. Waiting for all the flowers to bloom. Thank you very much for your work and special thanks for the gift in the form of three giant lilies! Good luck and prosperity to your store!');
+INSERT INTO `comments` (`comments_id`, `commenter_name`, `comment_text`) VALUES
+(1, 'Viktoriya', 'Last year I bought a mix of onion flowers. All flowers have bloomed this year. Very happy with the purchase!'),
+(2, 'Alex', 'All tulips from my garden were bought at the Florium store. Not one variety has not repeated. The beauty is extraordinary. Thanks to the employees of Florium.'),
+(3, 'Katya', 'Good store and good product. I ordered bulbs of lilies, gladioli, freesia and amaryllis at a promotional price. Everything has arrived, the bulbs are in excellent condition and everyone has already entered! On all three amaryllis there are pedicels, on one even two, that is, everyone will bloom! Plus I received three bulbs of giant lilies as a gift! Thank you very much! Prosperity to your store and profitable customers!'),
+(4, 'Oksana', 'Good store and good product. I ordered bulbs of lilies, gladioli, freesia and amaryllis at a promotional price. Everything came of good quality, well packaged. All planted and already sprouted. Waiting for all the flowers to bloom. Thank you very much for your work and special thanks for the gift in the form of three giant lilies! Good luck and prosperity to your store!');
 
 -- --------------------------------------------------------
 
@@ -153,46 +154,46 @@ CREATE TABLE `flower_catalog` (
 --
 
 INSERT INTO `flower_catalog` (`flower_id`, `category_id`, `flower_name`, `price`, `img_src`, `is_available`, `provider_id`) VALUES
-(234007, 1, 'Heartfelt', '69.99', 'flower_catalog/Heartfelt.jpg', b'1', 3),
-(234008, 1, 'All the Rage', '45.00', 'flower_catalog/All_the_Rage.jpg', b'1', 3),
-(234009, 1, 'Tiger', '54.50', 'flower_catalog/Tiger.jpg', b'0', 3),
-(234010, 1, 'Ballerina', '55.00', 'flower_catalog/Ballerina.jpg', b'1', 3),
-(234011, 1, 'Knockout', '40.60', 'flower_catalog/Knockout.jpg', b'1', 3),
-(234012, 1, 'Pirouette', '58.00', 'flower_catalog/Pirouette.jpg', b'1', 3),
-(234013, 2, 'Buttercream', '65.00', 'flower_catalog/Buttercream.jpg', b'1', 2),
-(234014, 2, 'Santorini', '52.00', 'flower_catalog/Santorini.jpg', b'0', 2),
-(234015, 2, 'Nonna', '70.85', 'flower_catalog/Nonna.jpg', b'1', 2),
-(234016, 2, 'Amelia', '100.00', 'flower_catalog/Amelia.jpg', b'1', 2),
-(234017, 2, 'Finesse', '90.99', 'flower_catalog/Finesse.jpg', b'1', 2),
-(234018, 2, 'Rosy Glow', '74.99', 'flower_catalog/Rosy_Glow.jpg', b'1', 2),
-(234019, 2, 'Fifteen Peach', '79.55', 'flower_catalog/Fifteen_Peach.jpg', b'1', 2),
-(234020, 2, 'Magic Moment', '81.00', 'flower_catalog/Magic_Moment.jpg', b'1', 2),
-(234021, 3, 'Double the Buttercream', '79.00', 'flower_catalog/Double_the_Buttercream.jpg', b'1', 5),
-(234022, 3, 'Double the Unicorn', '85.99', 'flower_catalog/Double_the_Unicorn.jpg', b'0', 5),
-(234023, 3, 'Muse', '150.00', 'flower_catalog/Muse.jpg', b'1', 5),
-(234024, 3, 'Sonnet', '80.50', 'flower_catalog/Sonnet.jpg', b'1', 5),
-(234025, 3, 'Daydream', '90.00', 'flower_catalog/Daydream.jpg', b'1', 5),
-(234026, 3, 'Blossom', '115.00', 'flower_catalog/Blossom.jpg', b'1', 5),
-(234027, 3, 'Godetia', '70.00', 'flower_catalog/Godetia.jpg', b'1', 5),
-(234028, 3, 'Purple Iris', '65.99', 'flower_catalog/Purple_Iris.jpg', b'1', 5),
-(234029, 3, 'Isle of White', '74.99', 'flower_catalog/Isle_of_White.jpg', b'1', 5),
-(234030, 4, 'Luna', '65.70', 'flower_catalog/Luna.jpg', b'1', 1),
-(234031, 4, 'Juliet', '64.99', 'flower_catalog/Juliet.jpg', b'1', 1),
-(234032, 4, 'Regatta', '130.00', 'flower_catalog/Regatta.jpg', b'1', 1),
-(234033, 4, 'New Edwardian', '150.00', 'flower_catalog/New_Edwardian.jpg', b'1', 1),
-(234034, 4, 'Double_the_Mardi', '80.00', 'flower_catalog/Double_the_Mardi.jpg', b'0', 1),
-(234035, 4, 'Carmen', '75.90', 'flower_catalog/Carmen.jpg', b'0', 1),
-(234036, 4, 'Flora', '75.90', 'flower_catalog/Flora.jpg', b'1', 1),
-(234037, 5, 'Red and Blush', '40.00', 'flower_catalog/Red_and_Blush.jpg', b'1', 3),
-(234038, 5, 'Blooming Song', '64.99', 'flower_catalog/Blooming_Song.jpg', b'1', 3),
-(234039, 5, 'Pinky', '78.95', 'flower_catalog/Pinky.jpg', b'0', 3),
-(234040, 5, 'Poppins', '55.00', 'flower_catalog/Poppins.jpg', b'1', 3),
-(234041, 5, 'Signature', '102.95', 'flower_catalog/Signature.jpg', b'1', 3),
-(234042, 5, 'Loving', '42.99', 'flower_catalog/Loving.jpg', b'0', 3),
-(234043, 5, 'Winter_Spice', '61.00', 'flower_catalog/Winter_Spice.jpg', b'1', 3),
-(234044, 5, 'Cymbidium Orchids', '70.00', 'flower_catalog/Cymbidium_Orchids.jpg', b'1', 3),
-(234045, 5, 'Charm', '75.95', 'flower_catalog/Charm.jpg', b'1', 3),
-(234046, 5, 'Pink Splendid', '85.00', 'flower_catalog/Pink_Splendid.jpg', b'1', 3);
+(1, 1, 'Heartfelt', '69.99', 'flower_catalog/Heartfelt.jpg', b'1', 3),
+(2, 1, 'All the Rage', '45.00', 'flower_catalog/All_the_Rage.jpg', b'1', 3),
+(3, 1, 'Tiger', '54.50', 'flower_catalog/Tiger.jpg', b'0', 3),
+(4, 1, 'Ballerina', '55.00', 'flower_catalog/Ballerina.jpg', b'1', 3),
+(5, 1, 'Knockout', '40.60', 'flower_catalog/Knockout.jpg', b'1', 3),
+(6, 1, 'Pirouette', '58.00', 'flower_catalog/Pirouette.jpg', b'1', 3),
+(7, 2, 'Buttercream', '65.00', 'flower_catalog/Buttercream.jpg', b'1', 2),
+(8, 2, 'Santorini', '52.00', 'flower_catalog/Santorini.jpg', b'0', 2),
+(9, 2, 'Nonna', '70.85', 'flower_catalog/Nonna.jpg', b'1', 2),
+(10, 2, 'Amelia', '100.00', 'flower_catalog/Amelia.jpg', b'1', 2),
+(11, 2, 'Finesse', '90.99', 'flower_catalog/Finesse.jpg', b'1', 2),
+(12, 2, 'Rosy Glow', '74.99', 'flower_catalog/Rosy_Glow.jpg', b'1', 2),
+(13, 2, 'Fifteen Peach', '79.55', 'flower_catalog/Fifteen_Peach.jpg', b'1', 2),
+(14, 2, 'Magic Moment', '81.00', 'flower_catalog/Magic_Moment.jpg', b'1', 2),
+(15, 3, 'Double the Buttercream', '79.00', 'flower_catalog/Double_the_Buttercream.jpg', b'1', 5),
+(16, 3, 'Double the Unicorn', '85.99', 'flower_catalog/Double_the_Unicorn.jpg', b'0', 5),
+(17, 3, 'Muse', '150.00', 'flower_catalog/Muse.jpg', b'1', 5),
+(18, 3, 'Sonnet', '80.50', 'flower_catalog/Sonnet.jpg', b'1', 5),
+(19, 3, 'Daydream', '90.00', 'flower_catalog/Daydream.jpg', b'1', 5),
+(20, 3, 'Blossom', '115.00', 'flower_catalog/Blossom.jpg', b'1', 5),
+(21, 3, 'Godetia', '70.00', 'flower_catalog/Godetia.jpg', b'1', 5),
+(22, 3, 'Purple Iris', '65.99', 'flower_catalog/Purple_Iris.jpg', b'1', 5),
+(23, 3, 'Isle of White', '74.99', 'flower_catalog/Isle_of_White.jpg', b'1', 5),
+(24, 4, 'Luna', '65.70', 'flower_catalog/Luna.jpg', b'1', 1),
+(25, 4, 'Juliet', '64.99', 'flower_catalog/Juliet.jpg', b'1', 1),
+(26, 4, 'Regatta', '130.00', 'flower_catalog/Regatta.jpg', b'1', 1),
+(27, 4, 'New Edwardian', '150.00', 'flower_catalog/New_Edwardian.jpg', b'1', 1),
+(28, 4, 'Double_the_Mardi', '80.00', 'flower_catalog/Double_the_Mardi.jpg', b'0', 1),
+(29, 4, 'Carmen', '75.90', 'flower_catalog/Carmen.jpg', b'0', 1),
+(30, 4, 'Flora', '75.90', 'flower_catalog/Flora.jpg', b'1', 1),
+(31, 5, 'Red and Blush', '40.00', 'flower_catalog/Red_and_Blush.jpg', b'1', 3),
+(32, 5, 'Blooming Song', '64.99', 'flower_catalog/Blooming_Song.jpg', b'1', 3),
+(33, 5, 'Pinky', '78.95', 'flower_catalog/Pinky.jpg', b'0', 3),
+(34, 5, 'Poppins', '55.00', 'flower_catalog/Poppins.jpg', b'1', 3),
+(35, 5, 'Signature', '102.95', 'flower_catalog/Signature.jpg', b'1', 3),
+(36, 5, 'Loving', '42.99', 'flower_catalog/Loving.jpg', b'0', 3),
+(37, 5, 'Winter_Spice', '61.00', 'flower_catalog/Winter_Spice.jpg', b'1', 3),
+(38, 5, 'Cymbidium Orchids', '70.00', 'flower_catalog/Cymbidium_Orchids.jpg', b'1', 3),
+(39, 5, 'Charm', '75.95', 'flower_catalog/Charm.jpg', b'1', 3),
+(40, 5, 'Pink Splendid', '85.00', 'flower_catalog/Pink_Splendid.jpg', b'1', 3);
 
 -- --------------------------------------------------------
 
@@ -287,6 +288,12 @@ ALTER TABLE `client`
   ADD KEY `client_id` (`city_id`);
 
 --
+-- Indexes for table `comments`
+--
+ALTER TABLE `comments`
+  ADD PRIMARY KEY (`comments_id`);
+
+--
 -- Indexes for table `delivery`
 --
 ALTER TABLE `delivery`
@@ -325,6 +332,64 @@ ALTER TABLE `payment_method`
 --
 ALTER TABLE `provider`
   ADD PRIMARY KEY (`provider_id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `category`
+--
+ALTER TABLE `category`
+  MODIFY `category_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+
+--
+-- AUTO_INCREMENT for table `city`
+--
+ALTER TABLE `city`
+  MODIFY `city_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+
+--
+-- AUTO_INCREMENT for table `client`
+--
+ALTER TABLE `client`
+  MODIFY `client_id` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `comments`
+--
+ALTER TABLE `comments`
+  MODIFY `comments_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+
+--
+-- AUTO_INCREMENT for table `delivery`
+--
+ALTER TABLE `delivery`
+  MODIFY `delivery_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
+-- AUTO_INCREMENT for table `flower_catalog`
+--
+ALTER TABLE `flower_catalog`
+  MODIFY `flower_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=41;
+
+--
+-- AUTO_INCREMENT for table `order_info`
+--
+ALTER TABLE `order_info`
+  MODIFY `order_id` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `payment_method`
+--
+ALTER TABLE `payment_method`
+  MODIFY `payment_method_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+
+--
+-- AUTO_INCREMENT for table `provider`
+--
+ALTER TABLE `provider`
+  MODIFY `provider_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- Constraints for dumped tables
