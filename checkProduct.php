@@ -1,7 +1,7 @@
 <?php
 $categ = $_GET['category']; 
  
-$query = "SELECT * FROM flower_catalog WHERE category_id = '$categ'"; 
+$query = "SELECT * FROM flower_catalog WHERE category_id = $categ "; 
 $result = mysqli_query ($link, $query);  
 
 if($result) {

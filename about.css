@@ -102,11 +102,47 @@ main{
 	margin: 10px;
 	margin-left: 35%;
 }
+.gallery{
+	display: flex;
+	flex-wrap: wrap;
+}
+.gallery img{
+	width: 400px;
+	margin: 20px;
+	height: auto;
+}
 footer{
+    
+	padding: 60px 0;
 	background-color: rgb(29, 28, 28);
-	color: blanchedalmond;
 }
 .footer{
 	display: flex;
-	justify-content: space-between;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
 }
+ 
+.footer__left a:hover{
+	background-color:  #000;
+	opacity: 0.5;
+} 
+
+.footer__left a{
+	color: #F6F5F3;
+}
+.footer__right{
+	margin-right: 40px;
+}
+.footer__right i { 
+	color: #F6F5F3;
+	font-size: larger;
+	margin-top: 20px;
+	margin-right: 20px;
+}
+
+.footer__right i:hover{
+	background-color:  #000;
+	opacity: 0.5;
+	cursor: pointer;
+} 

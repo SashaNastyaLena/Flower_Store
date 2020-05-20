@@ -230,6 +230,7 @@ section{
 	flex-wrap: wrap;
 	justify-content: space-between;
 	font-size: 20px;
+	
 }
 .review{
 	padding: 25px;
@@ -317,14 +318,18 @@ footer{
 	}
 	.wrapper:nth-child(n){
 		display: inline-block;
-		 
 		padding: 20px 0;
-		 
-	 
 	  }
-	 
+ 
 	 .wrapper img{
 		max-width: 300px;
 		margin: 10px;
 	 } 
   }
+  @media (max-width:1474px) { 
+	   
+	   .offer li{
+		 width: auto;
+	   }
+	   
+	}

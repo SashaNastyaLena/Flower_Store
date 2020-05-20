@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="flower.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+	integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
    
     <title>Flower</title>
 </head>
@@ -28,19 +30,19 @@
                     Categories
                 </h2>
                <ul class="categories_list">
-                    <li><a href="category.php?category=<?php echo '1'; ?>"> Tulips </a></li>
-                    <li><a href="category.php?category=<?php echo '3'; ?>"> Wedding bouquets </a></li>
-                    <li><a href="category.php?category=<?php echo '2'; ?>"> Roses </a></li>
-                    <li><a href="category.php?category=<?php echo '4'; ?>"> Flowers </a></li>
-                    <li><a href="category.php?category=<?php echo '5'; ?>"> Flowers box </a></li>
-        
+                     <li><a href="category.php?category=<?php echo '1'; ?>">Tulips</a></li>
+                    <li><a href="category.php?category=<?php echo '3'; ?>"> Wedding bouquets</a></li>
+                    <li><a href="category.php?category=<?php echo '2'; ?>"> Roses</a></li>
+                    <li><a href="category.php?category=<?php echo '4'; ?>"> Flowers</a></li>
+                    <li><a href="category.php?category=<?php echo '5'; ?>">Flowers box</a></li>
                 </ul>
             </aside>
-            <section>
+            
+                    <section>
                 <div class="category">
                     <div class="category_title">
-                        <h2>Tulips</h2>
-                        <a href="category.php?category=<?php echo '1'; ?>">more</a>
+                        <h2>Tulips <a href="category.php?category=<?php echo '1'; ?>"><i class="fas fa-angle-double-right"></i> </a> </h2>
+                        
                     </div>
                     <div class="category_block">
                         <div class="category_box">
@@ -51,7 +53,7 @@
                         </div>
                         <div class="category_box">
                             <img id="img" src="flower_catalog/All_the_Rage.jpg" alt="Tulips">
-                            <h3 id="name">All the Rage</h3>
+                            <h3 id="name">All the Rage"</h3>
                             <p id="price">45.00 $</p>
                             <button onclick="addToOrder()" class="order_btn">ORDER</button>
                         </div>
@@ -65,8 +67,8 @@
                  </div>
                  <div class="category">
                     <div class="category_title">
-                        <h2>Wedding bouquets</h2>
-                        <a href="category.php?category=<?php echo '3'; ?>">more</a>
+                        <h2>Wedding bouquets  <a href="category.php?category=<?php echo '3'; ?>"><i class="fas fa-angle-double-right"></i> </a></h2>
+                   
                     </div>
                     <div class="category_block">
                         <div class="category_box">
@@ -91,8 +93,8 @@
                  </div>
                  <div class="category">
                     <div class="category_title">
-                        <h2>Roses</h2>
-                        <a href="category.php?category=<?php echo '2'; ?>"> more</a>
+                        <h2>Roses  <a href="category.php?category=<?php echo '2'; ?>"><i class="fas fa-angle-double-right"></i> </a></h2>
+                        
                     </div>
                     <div class="category_block">
                         <div class="category_box">
@@ -117,8 +119,8 @@
                  </div>
                  <div class="category">
                     <div class="category_title">
-                        <h2>Flowers</h2>
-                        <a href="category.php?category=<?php echo '4'; ?>"> more</a>
+                        <h2>Flowers  <a href="category.php?category=<?php echo '4'; ?>"><i class="fas fa-angle-double-right"></i> </a></h2>
+                       
                    
                     </div>
                     <div class="category_block">
@@ -144,9 +146,9 @@
                  </div>
                  <div class="category">
                     <div class="category_title">
-                        <h2>Flowers box</h2>
+                        <h2>Flowers box  <a href="category.php?category=<?php echo '5'; ?>"><i class="fas fa-angle-double-right"></i> </a></h2>
                         
-                    <a href="category.php?category=<?php echo '5'; ?>">more</a>
+                    
                     </div>
                     <div class="category_block">
                         <div class="category_box">
@@ -172,11 +174,30 @@
             </section>
         </div>
     </main>
-    <footer>
-        <div class="containers">
 
-        </div>
-    </footer>
-    
+	<footer>
+		<div class="content footer">
+			<div class="footer__left">
+				 
+					<ul class="menu">
+						<li><a href="categories.php">Categories</a></li>	
+						<li><a href="about.html">About us</a></li>	
+						<li><a href="photogallery.html">Photogallery</a></li>	
+						<li><a href="contact.html">Contact us</a></li>	
+					</ul>
+				 
+			</div>
+			<div class="footer__right">
+				<i class="fab fa-instagram-square"></i>
+				<i class="fab fa-facebook-square"></i>
+				<i class="far fa-envelope"></i>
+				<i class="fab fa-telegram-plane"></i>
+			 
+			</div>			
+
+		</div>
+	</footer>
+ 
+
 </body>
 </html>
