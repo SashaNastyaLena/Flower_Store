@@ -1,0 +1,26 @@
+body{
+    background: url(img/aboutblock.jpg) no-repeat;
+    -moz-background-size: 100%; /* Firefox 3.6+ */
+    -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
+    -o-background-size: 100%; /* Opera 9.6+ */
+    background-size: 100%; /* Современные браузеры */
+    color: darkred;
+    font-size: 18px;
+    font-style: oblique;
+    font-weight: normal;
+}
+
+#login_container {
+    width: 400px;
+    height: 350px;
+    margin: 100px 150px 150px 150px;
+}
+input[type=submit] {
+    padding:5px 15px;
+    background: white;
+    border:0 none;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    color: #A00000;
+}
