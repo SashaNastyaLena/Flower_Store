@@ -58,10 +58,10 @@
                             <a class="order_btn" href="order.php?order=2">ORDER</a>
                         </div>
                         <div class="category_box">
-                            <img id="img" src="flower_catalog/Tiger.jpg" alt="Tulips">
+                            <img style='opacity:0.3' id="img" src="flower_catalog/Tiger.jpg" alt="Tulips">
                             <h3 id="name">Tiger</h3>
                             <p id="price">54.50 $</p>  
-                            <a class="order_btn" href="order.php?order=3">ORDER</a>
+                            <a style="color: silver; border-color: silver;" class="order_btn" onclick="event.preventDefault()" class="order_btn" href="order.php?order=3">ORDER</a>
                         </div>
                     </div>
                  </div>
@@ -78,10 +78,10 @@
                             <a class="order_btn" href="order.php?order=15">ORDER</a>
                         </div>
                         <div class="category_box">
-                            <img id="img" src="flower_catalog/Double_the_Unicorn.jpg" alt="Wedding bouquets">
+                            <img style='opacity:0.3' id="img" src="flower_catalog/Double_the_Unicorn.jpg" alt="Wedding bouquets">
                             <h3 id="name">Double the Unicorn</h3>
                             <p id="price">85.99 $</p>
-                            <a class="order_btn" href="order.php?order=16">ORDER</a>
+                            <a style="color: silver; border-color: silver;" class="order_btn" onclick="event.preventDefault()" class="order_btn" href="order.php?order=16">ORDER</a>
                         </div>
                         <div class="category_box">
                             <img id="img" src="flower_catalog/Muse.jpg" alt="Wedding bouquets">
@@ -104,10 +104,10 @@
                             <a class="order_btn" href="order.php?order=7">ORDER</a>
                         </div>
                         <div class="category_box">
-                        <img id="img" src="flower_catalog/Santorini.jpg" alt="Roses">
+                        <img style='opacity:0.3' id="img" src="flower_catalog/Santorini.jpg" alt="Roses">
                             <h3 id="name">Santorini</h3>
                             <p id="price">52.00 $</p>
-                            <a class="order_btn" href="order.php?order=8">ORDER</a>
+                            <a style="color: silver; border-color: silver;" class="order_btn" onclick="event.preventDefault()" class="order_btn" href="order.php?order=8">ORDER</a>
                         </div>
                         <div class="category_box">
                         <img id="img" src="flower_catalog/Nonna.jpg" alt="Roses">
@@ -164,10 +164,10 @@
                             <a class="order_btn" href="order.php?order=32">ORDER</a>
                         </div>
                         <div class="category_box">
-                        <img id="img" src="flower_catalog/Pinky.jpg" alt="Flowers box">
+                        <img style='opacity:0.3' id="img" src="flower_catalog/Pinky.jpg" alt="Flowers box">
                             <h3 id="name">Pinky</h3>
                             <p id="price">78.95 $</p>
-                            <a class="order_btn" href="order.php?order=33">ORDER</a>
+                            <a style="color: silver; border-color: silver;" class="order_btn" onclick="event.preventDefault()" class="order_btn" href="order.php?order=33">ORDER</a>
                         </div>
                     </div>
                  </div>
