@@ -8,7 +8,7 @@ body{
 	margin: 0px auto;
 }
  nav{
-    margin-right:10%;
+    margin-right:8%;
 	padding:  0;
 	display: flex;
 	justify-content: flex-end;
@@ -20,7 +20,7 @@ body{
 }
 .menu a{ 
 	text-decoration: none;
-	color: #3d5111;
+    color: #9a0a5b;
 	font-size: 20px; 
 	padding: 10px 15px;
 }
@@ -56,6 +56,9 @@ section{
     padding: 10px;
     font-size: 30px;
     margin: 0 auto; 
+    margin-left: 10px;
+   
+    color: #9a0a5b;
 }
 .categories_list{
     margin: 0;
@@ -70,7 +73,7 @@ section{
  }
 .categories_list li {
     list-style-type: none;
-    border-top: 1px solid black;
+    
     padding: 10px 20px;
     font-size: 20px;
     cursor: pointer;
@@ -134,23 +137,26 @@ section{
     box-shadow: 0 0 3px lightcoral;
 }
 .order_img{
-    width: 300px;
+    width: 600px;
 }
 .order_box{
     text-align: center;
 }
-.order_btn{
-    padding: 10px 15px;
+.order_button{
+    cursor: pointer;
+    margin-left:35%;
+    background-color: white;
+    padding: 5px 15px;
     border: 1px solid rgb(243, 206, 235);
 }
 .form{
-    border: 2px solid black;
-    padding: 20px;
+    margin-right: 40px;
+    padding:0  20px;
     font-size:20px;
 }
 .form p {
     padding: 10px;
-    border-left: 3px solid #ffcce9;
+    border-left: 2px solid #ffcce9;
 }
 input, select{
     border: 2px solid #ffcce9;
@@ -174,7 +180,11 @@ input, select{
   
     padding: 5px 10px ;
  }
- 
+ .aside_title{
+     margin-top: 20px;
+     margin-bottom: 10px;
+     font-size: 20px;
+ }
 footer{
     
 	padding: 60px 0;
@@ -205,12 +215,41 @@ footer{
 	margin-right: 20px;
 }
 
+.contact img{
+    width: 40px;
+}
+.cont{
+    display: flex;
+    margin: 30px;
+    justify-content: center;
+    align-items: flex-start;
+    width: 90%;
+}
+.contact{
+    width: 500px;
+    font-size: 18px ;
+}
+.contact p {
+    display: flex;
+    align-items: center;
+}
+.contact img{
+    margin-right: 10px;
+}
+iframe{
+    padding: 10px;
+    border: 1px solid rgb(221, 221, 221);
+    width: 650px;
+    height: 500px;
+}
 .footer__right i:hover{
 	background-color:  #000;
 	opacity: 0.5;
 	cursor: pointer;
 } 
-
+.order{
+    justify-content: center;
+}
  
 @media (max-width:715px) {
     .main_blocks{
