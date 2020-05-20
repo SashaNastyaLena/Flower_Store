@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: May 20, 2020 at 02:24 PM
+-- Generation Time: May 20, 2020 at 07:21 PM
 -- Server version: 8.0.17
 -- PHP Version: 7.3.10
 
@@ -89,7 +89,8 @@ CREATE TABLE `client` (
   `city_id` int(11) NOT NULL,
   `adress` varchar(250) NOT NULL,
   `delivery_id` int(11) NOT NULL,
-  `payment_method_id` int(11) NOT NULL
+  `payment_method_id` int(11) NOT NULL,
+  `flower_id` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 -- --------------------------------------------------------
@@ -198,28 +199,6 @@ INSERT INTO `flower_catalog` (`flower_id`, `category_id`, `flower_name`, `price`
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ordered`
---
-
-CREATE TABLE `ordered` (
-  `flower_id` int(11) NOT NULL,
-  `order_id` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
-
--- --------------------------------------------------------
-
---
--- Table structure for table `order_info`
---
-
-CREATE TABLE `order_info` (
-  `order_id` int(11) NOT NULL,
-  `client_id` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
-
--- --------------------------------------------------------
-
---
 -- Table structure for table `payment_method`
 --
 
@@ -285,7 +264,8 @@ ALTER TABLE `client`
   ADD PRIMARY KEY (`client_id`),
   ADD KEY `client_delivery_id` (`delivery_id`) USING BTREE,
   ADD KEY `client_payment_method_id` (`payment_method_id`) USING BTREE,
-  ADD KEY `client_id` (`city_id`);
+  ADD KEY `client_id` (`city_id`),
+  ADD KEY `flower_id` (`flower_id`);
 
 --
 -- Indexes for table `comments`
@@ -306,20 +286,6 @@ ALTER TABLE `flower_catalog`
   ADD PRIMARY KEY (`flower_id`),
   ADD KEY `flower_catalog_category_id` (`category_id`) USING BTREE,
   ADD KEY `flower_catalog_provider_id` (`provider_id`) USING BTREE;
-
---
--- Indexes for table `ordered`
---
-ALTER TABLE `ordered`
-  ADD KEY `ordered_flower_id` (`flower_id`) USING BTREE,
-  ADD KEY `ordered_order_id` (`order_id`) USING BTREE;
-
---
--- Indexes for table `order_info`
---
-ALTER TABLE `order_info`
-  ADD PRIMARY KEY (`order_id`),
-  ADD KEY `order_info_client_id` (`client_id`);
 
 --
 -- Indexes for table `payment_method`
@@ -374,12 +340,6 @@ ALTER TABLE `flower_catalog`
   MODIFY `flower_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=41;
 
 --
--- AUTO_INCREMENT for table `order_info`
---
-ALTER TABLE `order_info`
-  MODIFY `order_id` int(11) NOT NULL AUTO_INCREMENT;
-
---
 -- AUTO_INCREMENT for table `payment_method`
 --
 ALTER TABLE `payment_method`
@@ -401,6 +361,7 @@ ALTER TABLE `provider`
 ALTER TABLE `client`
   ADD CONSTRAINT `client_id` FOREIGN KEY (`city_id`) REFERENCES `city` (`city_id`) ON DELETE CASCADE ON UPDATE CASCADE,
   ADD CONSTRAINT `delivery_id` FOREIGN KEY (`delivery_id`) REFERENCES `delivery` (`delivery_id`) ON DELETE CASCADE ON UPDATE CASCADE,
+  ADD CONSTRAINT `flower_id` FOREIGN KEY (`flower_id`) REFERENCES `flower_catalog` (`flower_id`) ON DELETE RESTRICT ON UPDATE RESTRICT,
   ADD CONSTRAINT `payment_method_id` FOREIGN KEY (`payment_method_id`) REFERENCES `payment_method` (`payment_method_id`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
@@ -409,19 +370,6 @@ ALTER TABLE `client`
 ALTER TABLE `flower_catalog`
   ADD CONSTRAINT `category_id` FOREIGN KEY (`category_id`) REFERENCES `category` (`category_id`) ON DELETE CASCADE ON UPDATE CASCADE,
   ADD CONSTRAINT `provider_id` FOREIGN KEY (`provider_id`) REFERENCES `provider` (`provider_id`) ON DELETE CASCADE ON UPDATE CASCADE;
-
---
--- Constraints for table `ordered`
---
-ALTER TABLE `ordered`
-  ADD CONSTRAINT `flower_id` FOREIGN KEY (`flower_id`) REFERENCES `flower_catalog` (`flower_id`) ON DELETE CASCADE ON UPDATE CASCADE,
-  ADD CONSTRAINT `order_id` FOREIGN KEY (`order_id`) REFERENCES `order_info` (`order_id`) ON DELETE CASCADE ON UPDATE CASCADE;
-
---
--- Constraints for table `order_info`
---
-ALTER TABLE `order_info`
-  ADD CONSTRAINT `order_info_client_id` FOREIGN KEY (`client_id`) REFERENCES `client` (`client_id`) ON DELETE CASCADE ON UPDATE CASCADE;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
