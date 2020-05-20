@@ -24,52 +24,16 @@
     </div>
 </header>
 <main>
-    <div class="containers main_blocks">
-        <aside>
-            <h2 class="categories_title">
-                Categories
-            </h2>
-            <ul class="categories_list">
-                <li><a href="category.php?category=<?php echo '1'; ?>">Tulips</a></li>
-                <li><a href="category.php?category=<?php echo '3'; ?>"> Wedding bouquets</a></li>
-                <li><a href="category.php?category=<?php echo '2'; ?>"> Roses</a></li>
-                <li><a href="category.php?category=<?php echo '4'; ?>"> Flowers</a></li>
-                <li><a href="category.php?category=<?php echo '5'; ?>">Flowers box</a></li>
-    
-            </ul>
-        </aside>
-
-        <section>
-            <div class="category"> 
-
-<?php 
-
-    include 'conection_bd.php';
-
-    $id = $_GET['order']; 
-    $query = "SELECT * FROM flower_catalog WHERE flower_id=$id"; 
-    $result = mysqli_query ($link, $query);  
-    $note = mysqli_fetch_array($result);
-    echo '<div class="order_box">';
-    echo "<img class='order_img' src=".$note['img_src']." alt='tulips'>";
-    echo "<h3 class='order_title'>".$note['flower_name']."</h3>";
-    echo '<p class="price">'.$note['price'].'$</p>';
-    echo '</div>';
-  
- ?>
-
- 
-            
-            </div>
-        </section>
-
-        <section>
-           <div class="form"> 
-             <form action="addorder.php" method="post">
+    <div class="containers order main_blocks">
+        <div class="form"> 
+             <form   method="post">
                 <p>First name: <input type="text" name="first_name"></p>
                 <p>Second name: <input type="text" name="second_name"></p>
+                <p>Surname name: <input type="text" name="surname"></p>
                 <p>City: <select name="city">
                  <?php 
+                 include 'conection_bd.php';
+ 
                     $query = "SELECT * FROM city"; 
                     $result = mysqli_query ($link, $query);  
                     while ($payment = mysqli_fetch_array($result)){ 
@@ -95,15 +59,29 @@
                     }  
                 ?> </select></p>
 
-                <input type="submit" name="add" value="Add">
-
+                <button type="submit" name="add"  class="order_button">Make order</button>
              </form>
+        </div>
+
+        <section>
+            <div class="category">
+                <?php 
+                   
+                    $id = $_GET['order']; 
+                    $query = "SELECT * FROM flower_catalog WHERE flower_id=$id"; 
+                    $result = mysqli_query ($link, $query);  
+                    $note = mysqli_fetch_array($result);
+                    echo '<div class="order_box">';
+                    echo "<img class='order_img' src=".$note['img_src']." alt='tulips'>";
+                    echo "<h3 class='order_title'>".$note['flower_name']."</h3>";
+                    echo '<p class="price">'.$note['price'].'$</p>';
+                    echo '</div>';
+                
+                ?> 
             </div>
-
-
-            
-      
         </section>
+
+
 
     </div>
 </main>
@@ -129,6 +107,28 @@
 			</div>			
 
 		</div>
-	</footer>
+    </footer>
+    
 </body>
 </html> 
+<?php
+ 
+if( isset( $_POST['add'] ) )
+    {	
+        $name = $_POST['first_name'];
+        $second_name = $_POST['second_name'];
+        $city = $_POST['city'];
+        $delivery = $_POST['delivery'];
+        $payment = $_POST['payment'];
+        $adress = $_POST['adress'];
+        $surname = $_POST['surname'];
+        
+        
+        $query = "INSERT INTO client(client_first_name,client_second_name, client_surname, city_id, adress, delivery_id,
+         payment_method_id, flower_id) VALUES('$name','$second_name', '$surname', '$city','$adress', '$delivery', '$payment', '$id' )";
+        $query_note = mysqli_query($link, $query);
+        header("Location: http://localhost/php/main.php"); 
+        
+    }
+  
+?>

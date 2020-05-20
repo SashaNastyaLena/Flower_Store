@@ -53,7 +53,7 @@
                         </div>
                         <div class="category_box">
                             <img id="img" src="flower_catalog/All_the_Rage.jpg" alt="Tulips">
-                            <h3 id="name">All the Rage"</h3>
+                            <h3 id="name">All the Rage</h3>
                             <p id="price">45.00 $</p>
                             <a class="order_btn" href="order.php?order=2">ORDER</a>
                         </div>

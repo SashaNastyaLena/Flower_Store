@@ -116,7 +116,7 @@
 			while ($note = mysqli_fetch_array($result)){ 
 				echo '<div class="review">'; 
 				echo "<p class='review__name'><b>".$note['commenter_name']."</b></p>";
-				echo '<p>'.$note['comment_text'].'$</p> ';
+				echo '<p>'.$note['comment_text'].'</p> ';
 				echo '</div>';
 			}    
 		}   
