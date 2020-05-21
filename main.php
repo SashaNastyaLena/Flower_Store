@@ -125,33 +125,10 @@
 		</div>
 		<button id="review__btn" onclick="reviewBox()" class="main-btn">Give us your feedback</button>
 		</div>
-		<div id="review_box">
-			<form  method="post">
-				<p>Name:</p>
-				<p><input type="text" name="name" id="name__review" size="60"></p>
-				<p>Review:</p>
-				<p><textarea id="review__text" name="text" rows="10" cols="60" ></textarea></p>
-				<div class="button"> 
-					<button class="review_box__btn" id="review_box__btnl" name='addReview'>submit</button>
-					<button class="review_box__btn" id="review_box__btnr" onclick="cancelBox(this)">cancel</button>
-				</div>
-			</form>
-		</div>
+		
 	</section>
-	<?php
-include 'conection_bd.php';
- 
-if( isset( $_POST['addReview'] ) )
-    {	
-        $name = $_POST['name'];
-        $text = $_POST['text'];
-        
-        $query = "INSERT INTO comments(commenter_name, comment_text) VALUES('$name','$text')";
-        $query_note = mysqli_query($link, $query);
-        
-        
-    }
-?>
+
+
 
 	<footer>
 		<div class="content footer">
@@ -178,13 +155,8 @@ if( isset( $_POST['addReview'] ) )
 
  <script>
 	 function reviewBox(){
-		let box = document.getElementById('review_box');
-		box.style.display = "block";
-	}
-	function cancelBox(){
-		let box = document.getElementById('review_box');
-		box.style.display = "none";
-	}
+		window.location = 'http://localhost/php/addComment.php'
+	} 
  
  </script>
 

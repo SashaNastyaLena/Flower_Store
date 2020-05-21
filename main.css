@@ -4,7 +4,7 @@ body{
 	font-family: 'Titillium Web';
 }
 .container{
-	max-width: 1200px;
+	width: 90%;
 	height: 65px;
 	margin: 0px auto;
 }
@@ -243,33 +243,6 @@ section{
 	flex-direction: column-reverse;
 	overflow-y: scroll;
 	height: 500px;
-}
-#review_box{
-	display: none;
-	font-size: larger;
-	position: fixed;
-	top: 20%;
-	left: 31%;
-	width: 500px;
-	border: 2px solid #FAD4D9;
-	border-radius: 15px;
-	padding: 30px;
-	background-color: #FFFEFE;
-	box-shadow: 0 0 40px #FAD4D9;
-}
-.review_box__btn{
- 
-	padding: 5px 10px;
-	border: 2px solid #FAD4D9;
-	border-radius: 10px;
-	background-color: #FFFEFE;
-	box-shadow: 0 0 10px #FAD4D9;
-	
-}
-.button{
-	display: flex;
-	justify-content: space-between;
-	width: 450px;
 }
 
 

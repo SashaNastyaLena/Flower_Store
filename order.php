@@ -125,10 +125,11 @@ if( isset( $_POST['add'] ) )
         
         
         $query = "INSERT INTO client(client_first_name,client_second_name, client_surname, city_id, adress, delivery_id,
-         payment_method_id, flower_id) VALUES('$name','$second_name', '$surname', '$city','$adress', '$delivery', '$payment', '$id' )";
+        payment_method_id, flower_id) VALUES('$name','$second_name', '$surname', '$city','$adress', '$delivery', '$payment', '$id' )";
         $query_note = mysqli_query($link, $query);
         header("Location: http://localhost/php/main.php"); 
         
+       
     }
   
 ?>

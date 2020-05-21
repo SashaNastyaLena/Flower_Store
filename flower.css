@@ -4,11 +4,11 @@ body{
 	font-family: 'Titillium Web';
 }
 .containers{
-	width: 95%;
+	width: 90%;
 	margin: 0px auto;
 }
  nav{
-    margin-right:8%;
+     
 	padding:  0;
 	display: flex;
 	justify-content: flex-end;
@@ -107,6 +107,7 @@ section{
     height: 300px;
     margin: auto;
 }
+
 .category_box   a{
     text-decoration: none;
     color: rgb(221, 88, 203);
@@ -117,6 +118,9 @@ section{
     font-size: 22px;
     margin: 0 30px;
    text-shadow: 1px 1px 5px #ffcce9;
+}
+.category_title h2{
+    margin-top: 0px;
 }
 .category_title a{
     color: #ca0073;
@@ -220,6 +224,7 @@ footer{
     width: 40px;
 }
 .cont{
+    height: 90vh;
     display: flex;
     margin: 30px;
     justify-content: center;
