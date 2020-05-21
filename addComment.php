@@ -47,12 +47,12 @@
     <div class="review_box">
         <form  method="post">
             <p>Name:</p>
-            <p><input type="text" name="name" id="name__review" size="60"></p>
+            <p><input type="text" name="name" id="name__review" size="73"></p>
             <p>Review:</p>
-            <p><textarea id="review__text" name="text" rows="10" cols="60" ></textarea></p>
+            <p><textarea id="review__text" name="text" rows="10" cols="67" ></textarea></p>
             <div class="button"> 
                 <button class="button" id="review_box__btnl" name='addReview'>submit</button>
-                <button class="button" id="review_box__btnr"  name="cancel">cancel</button>
+                <button class="button" id="review_box__btnr"  name="cancel">return</button>
             </div>
         </form>
     </div>
@@ -66,12 +66,14 @@ if( isset( $_POST['addReview'] ) )
     {	
         $name = $_POST['name'];
         $text = $_POST['text'];
-        
+     if($text && $name){
         $query = "INSERT INTO comments(commenter_name, comment_text) VALUES('$name','$text')";
 		$query_note = mysqli_query($link, $query);
 		mysql_close($link); 
 		echo '<script> window.location = "http://localhost/php/main.php"; </script> ';
-        
+     }else{
+        echo '<script> alert("Empty fields") </script> ';
+     }
     }
     else{
         if( isset( $_POST['cancel'] ) ){
