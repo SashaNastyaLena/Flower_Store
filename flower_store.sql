@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: May 20, 2020 at 07:21 PM
+-- Generation Time: May 21, 2020 at 06:00 PM
 -- Server version: 8.0.17
 -- PHP Version: 7.3.10
 
@@ -241,6 +241,18 @@ INSERT INTO `provider` (`provider_id`, `provider_name`, `country`, `phone`) VALU
 (4, 'Timana', 'Colombia', '+31657868341'),
 (5, 'Charm flowers', 'Kenya', '+31784734152');
 
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `user`
+--
+
+CREATE TABLE `user` (
+  `id` int(11) NOT NULL,
+  `login` varchar(250) NOT NULL,
+  `password` varchar(250) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
 --
 -- Indexes for dumped tables
 --
@@ -300,6 +312,12 @@ ALTER TABLE `provider`
   ADD PRIMARY KEY (`provider_id`);
 
 --
+-- Indexes for table `user`
+--
+ALTER TABLE `user`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- AUTO_INCREMENT for dumped tables
 --
 
@@ -350,6 +368,12 @@ ALTER TABLE `payment_method`
 --
 ALTER TABLE `provider`
   MODIFY `provider_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+
+--
+-- AUTO_INCREMENT for table `user`
+--
+ALTER TABLE `user`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- Constraints for dumped tables
