@@ -2,18 +2,18 @@
 <html>
 <head>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/css/bootstrap.min.css" integrity="2hfp1SzUoho7/TsGGGDaFdsuuDL0LX2hnUp6VkX3CUQ2K4K+xjboZdsXyp4oUHZj" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="data.css">
+    <link rel="stylesheet" type="text/css" href="orddata.css">
     <meta charset="utf-8">
     <title>Change VIP's data</title>
     <script type="text/javascript">
-        function home(form){
-            window.location = "http://localhost/Flower_store/catalog/ordertable.php";
+        function order(form){
+            window.location = "http://localhost/flower/orders/ordertable.php";
         }
     </script>
 </head>
 <body>
 <?php
-$link = mysqli_connect('localhost', 'root', '12345678');
+$link = mysqli_connect('localhost', 'root', '');
 $db_selected = mysqli_select_db( $link, 'flower_store');
 
 $client_id = $_GET['id'];
@@ -61,7 +61,7 @@ if(isset($_POST['save']))
             <input type="submit" name="save" value="Save"/>
         </form><br/>
         <input type="button" class="btn btn-warning "
-               onclick="home(document.getElementById('form'))" name="submit" value="Turn back" id="home" >
+               onclick="order(document.getElementById('form'))" name="submit" value="Turn back" id="home" >
     </div>
 </center>
 </body>

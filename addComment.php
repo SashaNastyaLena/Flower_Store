@@ -47,7 +47,7 @@
     <div class="review_box">
         <form  method="post">
             <p>Name:</p>
-            <p><input type="text" name="name" id="name__review" size="73"></p>
+            <p><input type="text" name="name" id="name__review" size="65"></p>
             <p>Review:</p>
             <p><textarea id="review__text" name="text" rows="10" cols="67" ></textarea></p>
             <div class="button"> 
@@ -56,7 +56,7 @@
             </div>
         </form>
     </div>
-</dody>
+</body>
 </html>
 
 <?php
@@ -70,14 +70,14 @@ if( isset( $_POST['addReview'] ) )
         $query = "INSERT INTO comments(commenter_name, comment_text) VALUES('$name','$text')";
 		$query_note = mysqli_query($link, $query);
 		mysql_close($link); 
-		echo '<script> window.location = "http://localhost/php/main.php"; </script> ';
+		echo '<script> window.location = "http://localhost/flower/main.php"; </script> ';
      }else{
         echo '<script> alert("Empty fields") </script> ';
      }
     }
     else{
         if( isset( $_POST['cancel'] ) ){
-            header("Location: http://localhost/php/main.php"); 
+            header("Location: http://localhost/flower/main.php");
         }
     }
 ?>

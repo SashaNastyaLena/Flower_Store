@@ -28,7 +28,7 @@
         <div class="form"> 
              <form   method="post">
                 <p>First name: <input size="26" type="text" name="first_name"></p>
-                <p>Second  name: <input size="22" type="text" name="second_name"></p>
+                <p>Second  name: <input size="23" type="text" name="second_name"></p>
                 <p>Surname: <input size="28" type="text" name="surname"></p>
                 <p>Adress: <input size="30" type="text" name="adress"></p>
                  <p>City: <select  name="city">
@@ -128,7 +128,7 @@ if( isset( $_POST['add'] ) )
             $query = "INSERT INTO client(client_first_name,client_second_name, client_surname, city_id, adress, delivery_id,
             payment_method_id, flower_id) VALUES('$name','$second_name', '$surname', '$city','$adress', '$delivery', '$payment', '$id' )";
             $query_note = mysqli_query($link, $query);
-            header("Location: http://localhost/php/main.php"); 
+            header("Location: http://localhost/flower/main.php");
       }  
         
     else{

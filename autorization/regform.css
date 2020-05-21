@@ -1,0 +1,93 @@
+body{
+    background: url(fon.jpg) ;
+    -moz-background-size: 100%; /* Firefox 3.6+ */
+    -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
+    -o-background-size: 100%; /* Opera 9.6+ */
+    background-size: 100%; /* Современные браузеры */
+}
+h1 {color: darkblue;
+    font-family: "Garamond";
+    font-style: italic;
+    text-align: center;
+    font-size: 42px;
+    }
+
+#login_container {
+    width: 455px;
+    height: 455px;
+    margin: 100px auto;
+    /*background: url(img/backgr1.gif) top left no-repeat;*/
+}
+
+#form_container {
+    width: 300px;
+    height: 400px;
+    margin: 0px auto;
+    padding-top: 100px;
+}
+#reg{
+    margin: 20px 0px 0px 125px;
+    border: 0;
+    width: 50px;
+    height: 50px;
+    background: url(sign1.png)no-repeat;
+    cursor:pointer;
+}
+#loginn {
+    margin: 20px 40px;
+    border: 0;
+    width: 50px;
+    height: 50px;
+    background: url(log1.png) top left no-repeat;
+    cursor:pointer;
+}
+#l1{
+    margin: -70px auto;
+}
+#v1{
+    margin: 0px 0px 0px 40px;
+    border: 0;
+    width: 50px;
+    height: 50px;
+}
+#r1{
+    margin: 0px 0px 0px 110px;
+    border: 0;
+    width: 50px;
+    height: 50px;
+}
+
+.login-text {
+    text-align:center;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin:25px;
+    font-size: 22px;
+    font-style: italic;
+    color: darkblue;
+    font-family: "Garamond";
+}
+.text_input:focus {
+    outline: 0;
+}
+#loginn:hover {opacity:0.9;}
+
+#reg:hover {opacity:0.9;}
+
+#loginn:active {
+    background: url(log.png) top left no-repeat;
+}
+#reg:active {
+    background: url(sign.png) top left no-repeat;
+}
+
+.text_input {
+    color: #c1c1c3;
+    border: 0;
+    margin: 5px 35px 0 34px;
+    padding: 0px 0px 0px 10px;
+    width: 229px;
+    height: 32px;
+    background: url(textinput.jpg) top left no-repeat;
+}
+

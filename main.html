@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="mainpage.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/css/bootstrap.min.css" integrity="2hfp1SzUoho7/TsGGGDaFdsuuDL0LX2hnUp6VkX3CUQ2K4K+xjboZdsXyp4oUHZj" crossorigin="anonymous">
+    <title>Flower store</title>
+    <script type="text/javascript">
+        function catalog(form){
+//            window.location = "http://localhost/original/vip/viptable.php";
+            window.location = "http://localhost/flower/catalog/cattable.php";
+        }
+        function comment(form){
+//            window.location = "http://localhost/original/cleaning/ctable.php";
+            window.location = "http://localhost/flower/comments/comtable.php"
+        }
+        function order(form){
+//            window.location = "http://localhost/original/services/sstable.php";
+            window.location = "http://localhost/flower/orders/comtable.php"
+        }
+        function supply(form){
+//            window.location = "http://localhost/original/schedule/stable.php";
+            window.location = "http://localhost/flower/suppliers/suptable.php"
+        }
+        function out(form){ 
+            window.location = "http://localhost/original";
+        }
+</script>
+</head>
+<body>
+ <div id="login_container">
+    <left>
+
+        <input type="button" class="btn btn-outline-danger btn-block" onclick="catalog(document.getElementById('form'))" name="submit" value="Catalog" id="catalog" ><br/><br/>
+        <input type="button" class="btn btn-outline-danger btn-block" onclick="comment(document.getElementById('form'))" name="submit" value="Orders" id="comment" ><br/><br/>
+        <input type="button" class="btn btn-outline-danger btn-block" onclick="order(document.getElementById('form'))" name="submit" value="Comments" id="order" ><br/><br/>
+        <input type="button" class="btn btn-outline-danger btn-block" onclick="supply(document.getElementById('form'))" name="submit" value="Suppliers" id="supply" ><br/><br/>
+        <center><input type="button" class="btn btn-outline-danger" onclick="out(document.getElementById('form'))" name="submit" value="Log out" id="out" ></center><br/><br/>
+            
+    </left>
+</div>        
+</body>
+</html>

@@ -155,7 +155,7 @@
 
  <script>
 	 function reviewBox(){
-		window.location = 'http://localhost/php/addComment.php'
+		window.location = 'http://localhost/flower/addComment.php'
 	} 
  
  </script>

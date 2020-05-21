@@ -2,12 +2,12 @@
 <html>
 <head>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/css/bootstrap.min.css" integrity="2hfp1SzUoho7/TsGGGDaFdsuuDL0LX2hnUp6VkX3CUQ2K4K+xjboZdsXyp4oUHZj" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="data.css">
+    <link rel="stylesheet" type="text/css" href="orddata.css">
     <meta charset="utf-8">
-    <title>Order</title>
+    <title>Enter data</title>
     <script type="text/javascript">
         function order(form){
-            window.location = "http://localhost/Flower_store/catalog/ordertable.php";
+            window.location = "http://localhost/flower/orders/ordertable.php";
         }
     </script>
 </head>
@@ -24,25 +24,25 @@
             City ID <br/>
             <input class="form-control" type="number" name="city_id" />
             Adress <br/>
-            <input class="form-control" type="text" name="adress" /><br/>
+            <input class="form-control" type="text" name="adress" />
             Delivery ID <br/>
-            <input class="form-control" type="number" name="delivery_id" /><br/>
+            <input class="form-control" type="number" name="delivery_id" />
             Payment Method ID <br/>
-            <input class="form-control" type="number" name="payment_method_id" /><br/>
+            <input class="form-control" type="number" name="payment_method_id" />
             Flower ID <br/>
             <input class="form-control" type="number" name="flower_id" /><br/>
             <input type="submit" name="add" value="Add"/><br/>
         </form><br/>
         <center>
             <input type="button" class="btn btn-danger "
-                   onclick="catalog(document.getElementById('form'))" name="submit" value="Turn back" id="home" >
+                   onclick="order(document.getElementById('form'))" name="submit" value="Turn back" id="home" >
         </center>
     </div>
 </center>
 
 <?php
 
-$link = mysqli_connect('localhost', 'root', '12345678');
+$link = mysqli_connect('localhost', 'root', '');
 $db_selected = mysqli_select_db( $link, 'flower_store');
 
 if( isset( $_POST['add'] ) )
@@ -56,7 +56,9 @@ if( isset( $_POST['add'] ) )
     $payment_method_id = $_POST['payment_method_id'];
     $flower_id = $_POST['flower_id'];
 
-    $query = "INSERT INTO client (client_first_name,client_second_name,client_surname,city_id,adress,delivery_id,payment_method_id,flower_id) VALUES('$client_first_name','$client_second_name','$client_surname','$city_id','$adress','$delivery_id','$payment_method_id','$flower_id')";
+
+    $query = "INSERT INTO client (client_first_name,client_second_name,client_surname,city_id,adress,delivery_id, payment_method_id, flower_id)
+ VALUES('$client_first_name', '$client_second_name','$client_surname','$city_id','$adress','$delivery_id', '$payment_method_id', '$flower_id')";
     $result = mysqli_query($link, $query);
     echo "<script>alert(\"Успешно добавлена!\");</script>";
 

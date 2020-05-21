@@ -2,15 +2,15 @@
 <html>
 <head>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/css/bootstrap.min.css" integrity="2hfp1SzUoho7/TsGGGDaFdsuuDL0LX2hnUp6VkX3CUQ2K4K+xjboZdsXyp4oUHZj" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="catalog.css">
+    <link rel="stylesheet" type="text/css" href="orders.css">
     <meta charset="utf-8">
     <title>Order</title>
     <script type="text/javascript">
         function order(form){
-            window.location = "http://localhost/Flower_store/catalog/orderdata.php";
+            window.location = "http://localhost/flower/orders/orderdata.php";
         }
         function home(form){
-            window.location = "http://localhost/Flower_store/catalog/mainpage.html";
+            window.location = "http://localhost/flower/mainpage.html";
         }
     </script>
 </head>
@@ -20,7 +20,7 @@
     <input type="button" class="btn btn-outline-dark btn-lg btn-block" onclick="home(document.getElementById('form'))" name="submit" value="Home" id="home" >
 </center>
 <?php
-$link = mysqli_connect('localhost', 'root', '12345678');
+$link = mysqli_connect('localhost', 'root', '');
 $db_selected = mysqli_select_db( $link, 'flower_store');
 $query = "SELECT * FROM client";
 $result = mysqli_query($link,$query);
