@@ -1,0 +1,20 @@
+body{
+    background: url(img/aboutblock.jpg);
+    -moz-background-size: 100%; /* Firefox 3.6+ */
+    -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
+    -o-background-size: 100%; /* Opera 9.6+ */
+    background-size: 100%; /* Современные браузеры */
+    color: #aa4444;
+    font-size: 18px;
+    font-style: oblique;
+    font-weight:bold;
+}
+
+h3{
+    margin-top: 200px;
+}
+
+input[type=button] {
+    margin-top: 180px;
+
+}
